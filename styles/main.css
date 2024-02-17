@@ -1466,7 +1466,7 @@ img.dropdown-image {
     }
 
     .text-muted {
-        color: white;
+        color: white!important;
     }
 
     #main > section.getintouch > div > div.text-center > h4 {
