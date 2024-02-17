@@ -16,11 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     foreach ($_FILES["files"]["tmp_name"] as $key => $tmp_name) {
         $fileName = $_FILES["files"]["name"][$key];
         $targetFilePath = $uploadDirectory . $fileName;
-
-        // Convert image to AVIF format
-        $image = imagecreatefromjpeg($tmp_name);
-        imageavif($image, $targetFilePath);
-
+        move_uploaded_file($tmp_name, $targetFilePath);
         $fileNames[] = $targetFilePath;
     }
 
@@ -45,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         return $key;
     }
+
 
     $imagePaths = implode(",", $fileNames);
     $token = random_string(50);
