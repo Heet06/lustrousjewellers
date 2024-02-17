@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 <div id="main">
 <div id="cursor" style="background-color: blanchedalmond; border-radius: 50%; height: 100px; width: 100px; position: absolute; transform: scale(0);"></div>
 <nav class="navbar navbar-expand-md custom-header navbar-light" id="nav">

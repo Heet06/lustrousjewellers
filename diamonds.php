@@ -87,14 +87,8 @@ $exe = mysqli_query($con, $query);
             ?>
         </div>
     </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <?php include 'components/footer.php';?>
     <script>
-    const scroll = new LocomotiveScroll({
-        el: document.querySelector('#main'),
-        smooth: true,
-    });
-
     document.querySelectorAll(".col-sm-6").forEach(element => {
         gsap.from(element, {
             y: 200,
