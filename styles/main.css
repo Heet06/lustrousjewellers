@@ -1472,4 +1472,8 @@ img.dropdown-image {
     #main > section.getintouch > div > div.text-center > h4 {
         color: white!important;
     }
+
+    .modern-form__hr {
+        color: rgb(0, 255, 189);
+    }
 }
