@@ -1455,6 +1455,11 @@ img.dropdown-image {
     justify-content: space-evenly;
 }
 
+#submitBtn {
+    padding: 10px 40px;
+    float: left;
+}
+
 [data-bs-theme="dark"] {
     .divider-style span {
         background-color: rgba(0, 0, 0, 0.5);
