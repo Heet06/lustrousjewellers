@@ -68,8 +68,7 @@ session_start();
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col text-center"><button class="btn btn-primary submit-now" type="submit">Submit
-                                Now</button></div>
+                        <div class="col text-center"><button class="btn btn-primary submit-now" type="submit">Submit Now</button></div>
                     </div>
                 </form>
             </div>

@@ -2,7 +2,7 @@
 <div id="main">
 <nav class="navbar navbar-expand-md custom-header navbar-light" id="nav">
         <div class="container-fluid">
-            <div><a class="navbar-brand" href="/">Lustrous<span>Jewellers</span> </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbar-collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            <div><a class="navbar-brand" href="/">Lustrous <span>Jewellers</span> </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbar-collapse"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="navbar-nav links">
                     <li class="nav-item"><a class="nav-link" href="/"><span style="color: rgb(255, 255, 255);">Home</span></a></li>
