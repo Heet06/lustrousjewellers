@@ -376,9 +376,26 @@ $exe = mysqli_query($con, $query);
           spaceBetween: 24,
         },
       },
-      speed: 700,
+      speed: 1000,
       slideActiveClass: "is-active",
-      slideDuplicateActiveClass: "is-active"
+      slideDuplicateActiveClass: "is-active",
+
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
+
+      autoplay: {
+        delay: 2000, // Time in milliseconds
+        disableOnInteraction: true,
+      },
+
+      lazy: {
+        loadPrevNext: true,
+      },
+
+      preventClicks: false,
+      preventClicksPropagation: false,
     });
   </script>
 </body>

@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-4 footer-about">
             <h4>About the company</h4>
-            <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
+            <p> We are a jewellery company. Our Motive is to sell premium jewellery and serve our customers with high quality products. </p>
             <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
         </div>
     </div>
