@@ -1448,3 +1448,7 @@ img.dropdown-image {
 .tab-pane {
     padding: 1rem;
 }
+
+.navbar > .container-fluid {
+    justify-content: space-evenly;
+}
