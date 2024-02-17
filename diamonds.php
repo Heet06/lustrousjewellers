@@ -6,13 +6,11 @@ $exe = mysqli_query($con, $query);
 ?>
 
 <!DOCTYPE html>
-<html amp data-bs-theme="light" lang="en" style="font-family: 'Cookie';">
+<html data-bs-theme="light" lang="en" style="font-family: 'Cookie';">
 
 <head>
     <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="canonical" href="https://lustrousjewellers.com/diamonds">
     <title>LustrousJewellers</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -22,12 +20,12 @@ $exe = mysqli_query($con, $query);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="logo.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
         integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 
 <body>
@@ -87,54 +85,51 @@ $exe = mysqli_query($con, $query);
             ?>
         </div>
     </div>
-    <?php include 'components/footer.php';?>
+    <?php include 'components/footer.php'; ?>
     <script>
-    document.querySelectorAll(".col-sm-6").forEach(element => {
-        gsap.from(element, {
-            y: 200,
+        document.querySelectorAll(".col-sm-6").forEach(element => {
+            gsap.from(element, {
+                y: 200,
+                opacity: 0,
+                delay: 0.5,
+                duration: 0.9,
+                stagger: 0.3,
+            });
+        });
+
+        gsap.from(".divider-style", {
+            y: -50,
             opacity: 0,
             delay: 0.5,
             duration: 0.9,
             stagger: 0.3,
-        }); 
-    });
+        });
 
-    gsap.from(".divider-style", {
-        y: -50,
-        opacity: 0,
-        delay: 0.5,
-        duration: 0.9,
-        stagger: 0.3,
-    });
-
-    document.querySelectorAll(".swiper-slide").forEach(element => {
-        gsap.from(element, {
-            y: 150,
-            opacity: 0,
-            delay: 0.5,
-            duration: 0.9,
-            stagger: 0.3,
-        }); 
-    });
-
-    document.querySelectorAll("img.d-block").forEach(element => {
-        element.addEventListener("mouseover", function(){
-            gsap.to(element, {
-                scale: 1.15,
+        document.querySelectorAll(".swiper-slide").forEach(element => {
+            gsap.from(element, {
+                y: 150,
+                opacity: 0,
+                delay: 0.5,
+                duration: 0.9,
+                stagger: 0.3,
             });
-        })
+        });
 
-        element.addEventListener("mouseleave", function() {
-            gsap.to(element, {
-                scale: 1,
-            });
-        })
-    });
+        document.querySelectorAll("img.d-block").forEach(element => {
+            element.addEventListener("mouseover", function () {
+                gsap.to(element, {
+                    scale: 1.15,
+                });
+            })
+
+            element.addEventListener("mouseleave", function () {
+                gsap.to(element, {
+                    scale: 1,
+                });
+            })
+        });
 
     </script>
-    <!-- <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
-        integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

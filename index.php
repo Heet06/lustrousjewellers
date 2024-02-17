@@ -5,15 +5,15 @@ $query = "select * from `homescreen`";
 $exe = mysqli_query($con, $query);
 ?>
 <!DOCTYPE html>
-<html amp data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="canonical" href="https://lustrousjewellers.com/">
-  <meta name="description" content="Lustrous Jewellers is a Premium Jewellery Company. Your only destination to buy Jewellery">
+  <meta name="description"
+    content="Lustrous Jewellers is a Premium Jewellery Company. Your only destination to buy Jewellery">
   <title>LustrousJewellers</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
@@ -235,7 +235,6 @@ $exe = mysqli_query($con, $query);
       transform: translateX(100px);
     }
   </style>
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <meta name="google-site-verification" content="UhQqgP2wOnlXe6q4ufx2LM8KZl14jUq8mBDkbIW-82c" />
 </head>
 

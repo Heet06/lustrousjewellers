@@ -1,3 +1,7 @@
+* {
+    transition: all ease-in-out 0.2s;
+}
+
 .mh-100vh {
     min-height: 100vh;
 }
