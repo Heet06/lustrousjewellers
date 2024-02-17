@@ -434,6 +434,11 @@ svg {
     .divider-style span {
         background-color: rgba(0, 0, 0, .5);
     }
+
+    .card {
+        background-color: rgb(58, 60, 62, 0.5);
+        backdrop-filter: blur(10px);
+    }
 }
 
 .divider-style:before {
