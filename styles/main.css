@@ -1478,6 +1478,10 @@ img.dropdown-image {
         color: white!important;
     }
 
+    .nav-tabs .nav-link.active {
+        border: solid #0dcaf0;
+    }
+
     #main > section.getintouch > div > div.text-center > h4 {
         color: var(--bs-body-color)!important;
     }
