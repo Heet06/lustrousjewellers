@@ -25,11 +25,13 @@
     </div>
 </footer>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 <script>
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true,
+    easing: 0.1,
     smoothMobile: true,
 });
 </script>
