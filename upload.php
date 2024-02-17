@@ -195,6 +195,7 @@ if (!isset($_SESSION['auth'])) {
             $('#imagePreviewContainer').addClass('d-none');
         }
     </script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>

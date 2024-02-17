@@ -297,6 +297,7 @@ $exe = mysqli_query($con, $query);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
     integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/theme.js"></script>
   <script>
     const swiper = new Swiper(".swiper", {
       // Optional parameters
@@ -341,31 +342,6 @@ $exe = mysqli_query($con, $query);
       preventClicks: false,
       preventClicksPropagation: false,
     });
-  </script>
-  <script>
-    // Function to set the color scheme based on the time of the day
-    function setThemeBasedOnTime() {
-      const now = new Date();
-      const hours = now.getHours();
-
-      // Set dark mode if it's evening or night (you can adjust the time as needed)
-      const isNightTime = hours >= 18 || hours < 6;
-
-      // Update the data-bs-theme attribute
-      document.documentElement.setAttribute('data-bs-theme', isNightTime ? 'dark' : 'light');
-
-      // Store the user's preference in localStorage
-      localStorage.setItem('colorScheme', isNightTime ? 'dark' : 'light');
-    }
-
-    // Check if the user has a stored preference and set the theme accordingly
-    const storedColorScheme = localStorage.getItem('colorScheme');
-    if (storedColorScheme) {
-      document.documentElement.setAttribute('data-bs-theme', storedColorScheme);
-    } else {
-      // If no preference is stored, set the theme based on the time
-      setThemeBasedOnTime();
-    }
   </script>
 </body>
 

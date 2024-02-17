@@ -146,6 +146,7 @@ $exe = mysqli_query($con, $query);
         crossorigin="anonymous"></script>
     <script src="assets/js/Animated-Pretty-Product-List-animated-column.js"></script>
     <script src="assets/js/Drag-and-Drop-Multiple-File-Form-Input-upload-Advanced-drop.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>

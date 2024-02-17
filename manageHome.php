@@ -173,6 +173,7 @@ $exe = mysqli_query($con, $query);
             });
         }
     </script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
