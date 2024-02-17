@@ -1465,13 +1465,13 @@ img.dropdown-image {
         background-color: rgba(0, 0, 0, 0.5);
     }
 
-    .row.py-5 {
-        background: #27000000;
-    }
-
     .card {
         background-color: rgba(146, 144, 195, 0.2);
         backdrop-filter: blur(10px);
+    }
+
+    .card-body.p-5.rounded {
+        background: transparent;
     }
 
     .text-muted {
