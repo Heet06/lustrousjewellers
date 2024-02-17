@@ -12,7 +12,7 @@ $exe = mysqli_query($con, $query);
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="canonical" href="https://lustrousjewellers.com/">
-  <meta name="description" content="Lustrous Jewellers is a Premium Jewellery Brand. This is one stop for all types of jewellery.">
+  <meta name="description" content="Lustrous Jewellers is a Premium Jewellery Company. Your only destination to buy Jewellery">
   <title>LustrousJewellers</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
