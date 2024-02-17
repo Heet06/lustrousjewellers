@@ -1468,4 +1468,8 @@ img.dropdown-image {
     .text-muted {
         color: white!important;
     }
+
+    #main > section.getintouch > div > div.text-center > h4 {
+        color: white!important;
+    }
 }
