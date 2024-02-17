@@ -1466,11 +1466,11 @@ img.dropdown-image {
     }
 
     .text-muted {
-        color: white!important;
+        color: var(--bs-body-color);
     }
 
     #main > section.getintouch > div > div.text-center > h4 {
-        color: white!important;
+        color: var(--bs-body-color);
     }
 
     .modern-form__hr {
