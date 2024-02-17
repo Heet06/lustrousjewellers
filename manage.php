@@ -110,7 +110,7 @@ if (isset($_GET['dd'])) {
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" role="tabpanel" id="tab-2">
+      <div class="tab-pane" role="tabpanel" id="tab-2">
         <div class="bootstrap_datatables">
           <div class="container py-5">
             <header class="text-center text-black">
