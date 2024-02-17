@@ -84,49 +84,49 @@ $exe = mysqli_query($con, $query);
             ?>
         </div>
     </div>
-    <?php include 'components/footer.php';?>
+    <?php include 'components/footer.php'; ?>
     <script>
-    document.querySelectorAll(".col-sm-6").forEach(element => {
-        gsap.from(element, {
-            y: 200,
+        document.querySelectorAll(".col-sm-6").forEach(element => {
+            gsap.from(element, {
+                y: 200,
+                opacity: 0,
+                delay: 0.5,
+                duration: 0.9,
+                stagger: 0.3,
+            });
+        });
+
+        gsap.from(".divider-style", {
+            y: -50,
             opacity: 0,
             delay: 0.5,
             duration: 0.9,
             stagger: 0.3,
-        }); 
-    });
+        });
 
-    gsap.from(".divider-style", {
-        y: -50,
-        opacity: 0,
-        delay: 0.5,
-        duration: 0.9,
-        stagger: 0.3,
-    });
-
-    document.querySelectorAll(".swiper-slide").forEach(element => {
-        gsap.from(element, {
-            y: 150,
-            opacity: 0,
-            delay: 0.5,
-            duration: 0.9,
-            stagger: 0.3,
-        }); 
-    });
-
-    document.querySelectorAll("img.d-block").forEach(element => {
-        element.addEventListener("mouseover", function(){
-            gsap.to(element, {
-                scale: 1.15,
+        document.querySelectorAll(".swiper-slide").forEach(element => {
+            gsap.from(element, {
+                y: 150,
+                opacity: 0,
+                delay: 0.5,
+                duration: 0.9,
+                stagger: 0.3,
             });
-        })
+        });
 
-        element.addEventListener("mouseleave", function() {
-            gsap.to(element, {
-                scale: 1,
-            });
-        })
-    });
+        document.querySelectorAll("img.d-block").forEach(element => {
+            element.addEventListener("mouseover", function () {
+                gsap.to(element, {
+                    scale: 1.15,
+                });
+            })
+
+            element.addEventListener("mouseleave", function () {
+                gsap.to(element, {
+                    scale: 1,
+                });
+            })
+        });
 
     </script>
     <!-- <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
@@ -141,6 +141,9 @@ $exe = mysqli_query($con, $query);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+        integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/Animated-Pretty-Product-List-animated-column.js"></script>
     <script src="assets/js/Drag-and-Drop-Multiple-File-Form-Input-upload-Advanced-drop.js"></script>
     <script src="assets/js/theme.js"></script>
