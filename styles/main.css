@@ -1466,6 +1466,6 @@ img.dropdown-image {
     }
 
     .text-muted {
-        background-color: white!important;
+        color: white!important;
     }
 }
