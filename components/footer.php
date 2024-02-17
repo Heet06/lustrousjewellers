@@ -3,7 +3,7 @@
         <div class="col-sm-6 col-md-4 footer-navigation">
             <h3><a href="#">Lustrous<span>Jewellers</span></a></h3>
             <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
-            <p class="company-name">LustrousJewellery © 2015 </p>
+            <p class="company-name">LustrousJewellers © 2015 </p>
         </div>
         <div class="col-sm-6 col-md-4 footer-contacts">
             <div>
