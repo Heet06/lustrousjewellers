@@ -30,7 +30,7 @@
 <script>
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
-    smooth: 1.5,
+    smooth: true,
     easing: 0.1,
     smoothMobile: true,
 });
