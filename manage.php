@@ -93,7 +93,7 @@ if (isset($_GET['dd'])) {
                               <td><a href="manage?oe=<?php echo $row['token'] ?>"><i class="fa fa-edit"></a></td>
                               <td><a href="manage?od=<?php echo $row['token'] ?>"><i class="fa fa-trash"></a></td>
                             </tr>
-                          <?php
+                            <?php
                           }
                           ?>
                         </tbody>
@@ -139,7 +139,7 @@ if (isset($_GET['dd'])) {
                               <td><a href="manage?de=<?php echo $row['token'] ?>"><i class="fa fa-edit"></a></td>
                               <td><a href="manage?dd=<?php echo $row['token'] ?>"><i class="fa fa-trash"></a></td>
                             </tr>
-                          <?php
+                            <?php
                           }
                           ?>
                         </tbody>
@@ -155,7 +155,9 @@ if (isset($_GET['dd'])) {
     </div>
   </div>
   <?php include 'components/footer.php'; ?>
-  <script src="assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
     integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
