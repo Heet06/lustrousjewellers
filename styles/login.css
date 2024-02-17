@@ -364,3 +364,7 @@ img.dropdown-image {
 .custom-header .dropdown ul li.active a {
     color: #e9ac09 !important;
 }
+
+.navbar > .container-fluid {
+    justify-content: space-evenly;
+}
