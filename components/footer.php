@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-sm-6 col-md-4 footer-navigation">
             <h3><a href="#">Lustrous <span>Jewellers</span></a></h3>
-            <p class="links"><a href="/">Home</a><strong> · </strong><a href="ornaments">Ornaments</a><strong> · </strong><a href="diamonds">Diamonds</a><strong> · </strong><a href="contact">Contact</a></p>
+            <p class="links"><a href="/">Home</a><strong> · </strong><a href="ornaments">Ornaments</a><strong> · </strong><a href="diamonds">Diamonds</a><strong> · </strong><a href="contact">Contact</a><strong></p>
             <p class="company-name">Lustrous Jewellers © 2024 </p>
         </div>
         <div class="col-sm-6 col-md-4 footer-contacts">
@@ -25,3 +25,13 @@
     </div>
 </footer>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script>
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true,
+    easing: 0.1,
+    smoothMobile: true,
+});
+</script>
