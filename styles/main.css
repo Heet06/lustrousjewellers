@@ -1471,7 +1471,7 @@ img.dropdown-image {
     }
 
     .card-body.p-5.rounded {
-        background: transparent;
+        background: transparent!important;
     }
 
     .text-muted {
