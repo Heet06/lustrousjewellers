@@ -16,7 +16,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
-                            <amp-img class="dropdown-image" src="avatar.png" layout="responsive" height="10" width="10"></amp-img><? echo $_SESSION['userdetails']['name'];?>
+                            <amp-img class="dropdown-image" src="avatar.png" height="5" width="5"></amp-img><? echo $_SESSION['userdetails']['name'];?>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="profile">Manage Profile</a>
@@ -34,7 +34,7 @@
                 <?php }else{
                 ?>
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><amp-img class="dropdown-image" src="avatar.png" layout="responsive" height="10" width="10"></amp-img></a>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><amp-img class="dropdown-image" src="avatar.png" height="5" width="5"></amp-img></a>
                         <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="login">Login</a><a class="dropdown-item" href="register">Register</a></div>
                     </li>
                 </ul>
