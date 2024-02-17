@@ -1,0 +1,77 @@
+<footer>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 footer-navigation">
+            <h3><a href="#">Lustrous<span>Jewellers</span></a></h3>
+            <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
+            <p class="company-name">LustrousJewellery © 2015 </p>
+        </div>
+        <div class="col-sm-6 col-md-4 footer-contacts">
+            <div>
+                <span class="fa fa-map-marker footer-contacts-icon"> </span>
+                <p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>
+            </div>
+            <div><i class="fa fa-phone footer-contacts-icon"></i>
+                <p class="footer-center-info email text-start"> +1 555 123456</p>
+            </div>
+            <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                <p><a href="#" target="_blank">support@company.com</a></p>
+            </div>
+        </div>
+        <div class="col-md-4 footer-about">
+            <h4>About the company</h4>
+            <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
+            <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script>
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true,
+});
+
+document.querySelectorAll(".col-sm-6").forEach(element => {
+    gsap.from(element, {
+        y: 200,
+        opacity: 0,
+        delay: 0.5,
+        duration: 0.9,
+        stagger: 0.3,
+    }); 
+});
+
+gsap.from(".divider-style", {
+    y: -50,
+    opacity: 0,
+    delay: 0.5,
+    duration: 0.9,
+    stagger: 0.3,
+});
+
+document.querySelectorAll(".swiper-slide").forEach(element => {
+    gsap.from(element, {
+        y: 150,
+        opacity: 0,
+        delay: 0.5,
+        duration: 0.9,
+        stagger: 0.3,
+    }); 
+});
+
+document.querySelectorAll("img.d-block").forEach(element => {
+    element.addEventListener("mouseover", function(){
+        gsap.to(element, {
+            scale: 1.15,
+        });
+    })
+
+    element.addEventListener("mouseleave", function() {
+        gsap.to(element, {
+            scale: 1,
+        });
+    })
+});
+
+</script>
