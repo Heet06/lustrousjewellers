@@ -88,7 +88,6 @@ $exe = mysqli_query($con, $query);
         </div>
     </div>
     </div>
-    <?php include 'components/footer.php'?>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script>
     const scroll = new LocomotiveScroll({
