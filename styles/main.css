@@ -422,11 +422,17 @@ svg {
 }
 
 .divider-style span {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     padding: 0 20px;
     position: relative;
     z-index: 5;
+}
+
+[data-bs-theme="dark"] {
+    .divider-style span {
+        background-color: rgba(0, 0, 0, .5);
+    }
 }
 
 .divider-style:before {
