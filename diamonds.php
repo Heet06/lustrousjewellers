@@ -87,7 +87,7 @@ $exe = mysqli_query($con, $query);
             ?>
         </div>
     </div>
-    <?php include 'components/footer.php';?>
+    </div>
     <script>
     document.querySelectorAll(".col-sm-6").forEach(element => {
         gsap.from(element, {
