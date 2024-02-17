@@ -54,7 +54,7 @@ $exe = mysqli_query($con, $query);
                                     ?>
                                     <div class="carousel-item <?php echo $activeClass; ?>">
                                         <amp-img src="<?php echo $image; ?>" class="d-block w-100" alt="Ornament Image"
-                                            style="padding: 10px; border-radius: 25px;" layout="responsive" height="100%" width="100%"></amp-img>
+                                            style="padding: 10px; border-radius: 25px;" layout="responsive" height="100" width="100"></amp-img>
                                     </div>
                                     <?php
                                 }
