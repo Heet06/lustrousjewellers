@@ -430,17 +430,6 @@ svg {
     z-index: 5;
 }
 
-[data-bs-theme="dark"] {
-    .divider-style span {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .card {
-        background-color: rgb(0, 0, 0, 0.5);
-        backdrop-filter: blur(10px);
-    }
-}
-
 .divider-style:before {
     content: "";
     display: block;
@@ -1464,4 +1453,19 @@ img.dropdown-image {
 
 .navbar > .container-fluid {
     justify-content: space-evenly;
+}
+
+[data-bs-theme="dark"] {
+    .divider-style span {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .card {
+        background-color: rgba(146, 144, 195, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    .text-muted {
+        background-color: white!important;
+    }
 }
