@@ -6,7 +6,7 @@ $exe = mysqli_query($con, $query);
 ?>
 
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en" style="font-family: 'Cookie';">
+<html lang="en" style="font-family: 'Cookie';">
 
 <head>
     <meta charset="utf-8">
