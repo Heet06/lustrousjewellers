@@ -145,7 +145,7 @@ $exe = mysqli_query($con, $query);
         }
 
         function submitForm() {
-            var maxSelection = 4;
+            var maxSelection = 8;
             var selectedProducts = [];
             $("input[name='selectedProducts[]']:checked").each(function () {
                 selectedProducts.push($(this).val());
