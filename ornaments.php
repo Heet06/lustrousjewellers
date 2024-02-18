@@ -104,12 +104,6 @@ $exe = mysqli_query($con, $query);
             var grid = document.querySelector('#masonry');
             var masonry;
 
-            masonry = new Masonry(grid, {
-                itemSelector: '.col-sm-6',
-                percentPosition: true,
-                columnWidth: '.col-sm-6'
-            });
-
             document.querySelectorAll(".col-sm-6").forEach(element => {
                 gsap.from(element, {
                     y: 200,
@@ -154,6 +148,12 @@ $exe = mysqli_query($con, $query);
 
             window.addEventListener('resize', function () {
                 masonry.layout();
+            });
+
+            masonry = new Masonry(grid, {
+                itemSelector: '.col-sm-6',
+                percentPosition: true,
+                columnWidth: '.col-sm-6'
             });
         }
     </script>
