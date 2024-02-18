@@ -146,7 +146,7 @@ $exe = mysqli_query($con, $query);
         var $container = $('.row');            
         $container.imagesLoaded(function(){                 
         $container.masonry({
-            itemSelector: 'col-sm-6.col-lg-4.mb-4',
+            itemSelector: 'col-sm-6',
             isAnimated: true,
         });
         });
