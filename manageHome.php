@@ -165,7 +165,7 @@ $exe = mysqli_query($con, $query);
                     // Handle the response if needed
                     console.log(response);
                     openModal();
-                    document.querySelector('iframe').src = "index.php";
+                    document.querySelector('iframe').src = "/";
                 }
             });
         }
