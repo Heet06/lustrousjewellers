@@ -37,7 +37,7 @@ $exe = mysqli_query($con, $query);
         <h2 class="divider-style"><span>Array Of Ornaments</span></h2>
     </div>
     <div style="scale: 0.9;">
-        <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
+        <div class="row" data-masonry='{"itemSelector":".col-sm-6.col-lg-4.mb-b"}'>
             <?php
             while ($row = mysqli_fetch_array($exe)) {
                 $src = explode(',', $row['images']);
@@ -141,6 +141,9 @@ $exe = mysqli_query($con, $query);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+        integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/Animated-Pretty-Product-List-animated-column.js"></script>
     <script src="assets/js/Drag-and-Drop-Multiple-File-Form-Input-upload-Advanced-drop.js"></script>
     <script src="assets/js/theme.js"></script>
