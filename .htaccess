@@ -2,8 +2,15 @@
 php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:22346981:
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
+# Redirect requests for PHP files to non-PHP extension
+RewriteCond %{THE_REQUEST} \.php [NC]
+RewriteRule ^(.+)\.php$ $1 [R=301,L]
+
+# Internal rewrite to add .php extension back for internal processing
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [NC,L]
+
+# Redirect HTTP to HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
