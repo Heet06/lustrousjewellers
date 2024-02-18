@@ -24,6 +24,27 @@ if (!isset($_SESSION['auth'])) {
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 250px;
+            height: 250px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: transparent;
+            border: none;
+            color: #000;
+        }
+    </style>
 </head>
 
 <body>
