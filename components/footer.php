@@ -32,6 +32,9 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true,
     inertia: 0.8,
-    smoothMobile: true,
+    smartphone: {
+        smooth: true,
+        inertia: 0.8,
+    },
 });
 </script>
