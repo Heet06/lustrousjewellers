@@ -112,22 +112,6 @@ $exe = mysqli_query($con, $query);
                 });
                 masonry.layout();
 
-                gsap.from(".row", {
-                    y: 200,
-                    opacity: 0,
-                    delay: 0.5,
-                    duration: 0.9,
-                    stagger: 0.3,
-                });
-
-                gsap.from(".divider-style", {
-                    y: -50,
-                    opacity: 0,
-                    delay: 0.5,
-                    duration: 0.9,
-                    stagger: 0.3,
-                });
-
                 document.querySelectorAll("img.d-block").forEach(element => {
                     element.addEventListener("mouseover", function () {
                         gsap.to(element, {
