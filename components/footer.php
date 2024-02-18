@@ -26,22 +26,12 @@
 </footer>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.js"></script>
 <script>
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
-    inertia: 0.8,
     smooth: true,
-    getDirection: true,
-    mobile: {
-        smooth: true,
-        inertia: 0.8,
-        getDirection: true,
-    },
-    tablet: {
-        smooth: true,
-        inertia: 0.8,
-        getDirection: true,
-    },
+    inertia: 0.8,
+    smoothMobile: true,
 });
 </script>
