@@ -112,14 +112,12 @@ $exe = mysqli_query($con, $query);
                 });
                 masonry.layout();
 
-                document.querySelectorAll(".col-sm-6").forEach(element => {
-                    gsap.from(element, {
-                        y: 200,
-                        opacity: 0,
-                        delay: 0.5,
-                        duration: 0.9,
-                        stagger: 0.3,
-                    });
+                gsap.from(".row", {
+                    y: 200,
+                    opacity: 0,
+                    delay: 0.5,
+                    duration: 0.9,
+                    stagger: 0.3,
                 });
 
                 gsap.from(".divider-style", {
@@ -128,16 +126,6 @@ $exe = mysqli_query($con, $query);
                     delay: 0.5,
                     duration: 0.9,
                     stagger: 0.3,
-                });
-
-                document.querySelectorAll(".swiper-slide").forEach(element => {
-                    gsap.from(element, {
-                        y: 150,
-                        opacity: 0,
-                        delay: 0.5,
-                        duration: 0.9,
-                        stagger: 0.3,
-                    });
                 });
 
                 document.querySelectorAll("img.d-block").forEach(element => {
@@ -161,7 +149,7 @@ $exe = mysqli_query($con, $query);
 
             setTimeout(function () {
                 masonry.layout();
-            }, 1000);
+            }, 500);
         });
     </script>
     <script src="assets/js/Animated-Pretty-Product-List-animated-column.js"></script>
