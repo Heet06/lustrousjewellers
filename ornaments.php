@@ -86,16 +86,6 @@ $exe = mysqli_query($con, $query);
     </div>
     <?php include 'components/footer.php'; ?>
     <script>
-
-        var $container = $('.row');            
-        $container.imagesLoaded(function(){                 
-        $container.masonry({
-            itemSelector: 'col-sm-6.col-lg-4.mb-4',
-            isAnimated: true,
-            columnWidth: 250,
-        });
-        });
-
         document.querySelectorAll(".col-sm-6").forEach(element => {
             gsap.from(element, {
                 y: 200,
@@ -142,6 +132,16 @@ $exe = mysqli_query($con, $query);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var $container = $('.row');            
+        $container.imagesLoaded(function(){                 
+        $container.masonry({
+            itemSelector: 'col-sm-6.col-lg-4.mb-4',
+            isAnimated: true,
+            columnWidth: 250,
+        });
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
         integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
