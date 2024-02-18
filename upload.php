@@ -191,6 +191,7 @@ if (!isset($_SESSION['auth'])) {
                         img.appendChild(imgElement);
 
                         preview.appendChild(img);
+                        scroll.update();
                     }
 
                     reader.readAsDataURL(input.files[i]);
