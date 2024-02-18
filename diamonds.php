@@ -109,7 +109,6 @@ $exe = mysqli_query($con, $query);
         window.onload = function () {
             masonry.layout();
             setInterval(function() {
-                masonry.layout();
                 scroll.update();
             }, 500);
 
