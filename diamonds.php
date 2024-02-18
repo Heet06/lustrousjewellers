@@ -37,12 +37,12 @@ $exe = mysqli_query($con, $query);
         <h2 class="divider-style"><span>Clusters of Diamonds</span></h2>
     </div>
     <div style="scale: 0.9;">
-        <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
+        <div id="masonry" class="row">
             <?php
             while ($row = mysqli_fetch_array($exe)) {
                 $src = explode(',', $row['images']);
                 ?>
-                <div class="col-sm-6 col-lg-4 mb-4" data-scroll data-scroll-speed="2">
+                <div class="col-sm-6 col-lg-4 mb-4">
                     <div class="card">
                         <div id="carousel-<?php echo $row['token']; ?>" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -98,14 +98,16 @@ $exe = mysqli_query($con, $query);
         integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // Make sure to run this script after the document has loaded
-        document.addEventListener("DOMContentLoaded", function () {
-            var grid = document.querySelector('#masonry');
-            var masonry = new Masonry(grid, {
+        var grid = document.querySelector('#masonry');
+        var masonry;
+        masonry = new Masonry(grid, {
                 itemSelector: '.col-sm-6',
                 percentPosition: true,
                 columnWidth: '.col-sm-6'
-            });
+        });
+        // Make sure to run this script after the document has loaded
+        window.onload = function () {
+            masonry.layout();
 
             document.querySelectorAll(".col-sm-6").forEach(element => {
                 gsap.from(element, {
@@ -114,7 +116,7 @@ $exe = mysqli_query($con, $query);
                     delay: 0.5,
                     duration: 0.9,
                     stagger: 0.3,
-                }); 
+                });
             });
 
             gsap.from(".divider-style", {
@@ -132,23 +134,27 @@ $exe = mysqli_query($con, $query);
                     delay: 0.5,
                     duration: 0.9,
                     stagger: 0.3,
-                }); 
+                });
             });
 
             document.querySelectorAll("img.d-block").forEach(element => {
-                element.addEventListener("mouseover", function(){
+                element.addEventListener("mouseover", function () {
                     gsap.to(element, {
                         scale: 1.15,
                     });
                 })
 
-                element.addEventListener("mouseleave", function() {
+                element.addEventListener("mouseleave", function () {
                     gsap.to(element, {
                         scale: 1,
                     });
                 })
             });
-        });
+
+            window.addEventListener('resize', function () {
+                masonry.layout();
+            });
+        }
     </script>
     <script src="assets/js/Bootstrap-DataTables-main.js"></script>
     <script src="assets/js/Animated-Pretty-Product-List-animated-column.js"></script>
