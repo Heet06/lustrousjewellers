@@ -109,10 +109,7 @@ $exe = mysqli_query($con, $query);
         // Make sure to run this script after the document has loaded
         window.onload = function () {
             masonry.layout();
-            setInterval(function() {
-                masonry.layout();
-                scroll.update();
-            }, 500);
+            scroll.update();
 
             document.querySelectorAll(".col-sm-6").forEach(element => {
                 gsap.from(element, {
