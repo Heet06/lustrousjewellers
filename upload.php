@@ -35,15 +35,6 @@ if (!isset($_SESSION['auth'])) {
             width: 250px;
             height: 250px;
         }
-
-        .close-btn {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            background: transparent;
-            border: none;
-            color: #000;
-        }
     </style>
 </head>
 
