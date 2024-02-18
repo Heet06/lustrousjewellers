@@ -156,6 +156,7 @@ $exe = mysqli_query($con, $query);
                 window.addEventListener('resize', function () {
                     masonry.layout();
                 });
+                masonry.layout();
             });
         });
     </script>
