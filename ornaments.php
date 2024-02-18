@@ -42,7 +42,7 @@ $exe = mysqli_query($con, $query);
             while ($row = mysqli_fetch_array($exe)) {
                 $src = explode(',', $row['images']);
                 ?>
-                <div class="col-sm-6 col-lg-4 mb-4" data-scroll data-scroll-speed="0.5">
+                <div class="col-sm-6 col-lg-4 mb-4" data-scroll data-scroll-speed="2">
                     <div class="card">
                         <div id="carousel-<?php echo $row['token']; ?>" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -100,57 +100,62 @@ $exe = mysqli_query($con, $query);
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         // Make sure to run this script after the document has loaded
-        document.addEventListener("DOMContentLoaded", function () {
+        window.onload = function () {
             var grid = document.querySelector('#masonry');
             var masonry;
 
-            imagesLoaded(grid, function () {
-                masonry = new Masonry(grid, {
-                    itemSelector: '.col-sm-6',
-                    percentPosition: true,
-                    columnWidth: '.col-sm-6'
-                });
-                masonry.layout();
+            masonry = new Masonry(grid, {
+                itemSelector: '.col-sm-6',
+                percentPosition: true,
+                columnWidth: '.col-sm-6'
+            });
 
-                gsap.from(".row", {
+            document.querySelectorAll(".col-sm-6").forEach(element => {
+                gsap.from(element, {
                     y: 200,
                     opacity: 0,
                     delay: 0.5,
                     duration: 0.9,
                     stagger: 0.3,
                 });
+            });
 
-                gsap.from(".divider-style", {
-                    y: -50,
+            gsap.from(".divider-style", {
+                y: -50,
+                opacity: 0,
+                delay: 0.5,
+                duration: 0.9,
+                stagger: 0.3,
+            });
+
+            document.querySelectorAll(".swiper-slide").forEach(element => {
+                gsap.from(element, {
+                    y: 150,
                     opacity: 0,
                     delay: 0.5,
                     duration: 0.9,
                     stagger: 0.3,
                 });
-
-                document.querySelectorAll("img.d-block").forEach(element => {
-                    element.addEventListener("mouseover", function () {
-                        gsap.to(element, {
-                            scale: 1.15,
-                        });
-                    })
-
-                    element.addEventListener("mouseleave", function () {
-                        gsap.to(element, {
-                            scale: 1,
-                        });
-                    })
-                });
-
-                window.addEventListener('resize', function () {
-                    masonry.layout();
-                });
             });
 
-            setTimeout(function () {
+            document.querySelectorAll("img.d-block").forEach(element => {
+                element.addEventListener("mouseover", function () {
+                    gsap.to(element, {
+                        scale: 1.15,
+                    });
+                })
+
+                element.addEventListener("mouseleave", function () {
+                    gsap.to(element, {
+                        scale: 1,
+                    });
+                })
+            });
+
+            window.addEventListener('resize', function () {
                 masonry.layout();
-            }, 500);
-        });
+            });
+        }
     </script>
     <script src="assets/js/Animated-Pretty-Product-List-animated-column.js"></script>
     <script src="assets/js/Drag-and-Drop-Multiple-File-Form-Input-upload-Advanced-drop.js"></script>
