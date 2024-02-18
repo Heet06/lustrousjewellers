@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-family: 'Cookie';">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bad Request</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <style>
         body{
             background-color: black;
