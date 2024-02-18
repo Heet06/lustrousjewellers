@@ -320,7 +320,7 @@ $exe = mysqli_query($con, $query);
           spaceBetween: 24,
         },
       },
-      speed: 2000,
+      speed: 1000,
       slideActiveClass: "is-active",
       slideDuplicateActiveClass: "is-active",
 
@@ -330,7 +330,7 @@ $exe = mysqli_query($con, $query);
       },
 
       autoplay: {
-        delay: 2000, // Time in milliseconds
+        delay: 3500, // Time in milliseconds
         disableOnInteraction: true,
       },
 
