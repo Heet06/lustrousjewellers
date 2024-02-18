@@ -30,10 +30,6 @@ if (!isset($_SESSION['auth'])) {
             margin: 10px;
             text-align: center;
         }
-
-        .image-container img {
-            width: 250px;
-        }
     </style>
 </head>
 
