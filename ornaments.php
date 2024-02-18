@@ -102,8 +102,10 @@ $exe = mysqli_query($con, $query);
         // Make sure to run this script after the document has loaded
         document.addEventListener("DOMContentLoaded", function () {
             var grid = document.querySelector('#masonry');
+            var masonry;
+
             imagesLoaded(grid, function () {
-                var masonry = new Masonry(grid, {
+                masonry = new Masonry(grid, {
                     itemSelector: '.col-sm-6',
                     percentPosition: true,
                     columnWidth: '.col-sm-6'
@@ -149,6 +151,10 @@ $exe = mysqli_query($con, $query);
                             scale: 1,
                         });
                     })
+                });
+
+                window.addEventListener('resize', function () {
+                    masonry.layout();
                 });
             });
         });
