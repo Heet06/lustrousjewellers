@@ -33,7 +33,6 @@ if (!isset($_SESSION['auth'])) {
 
         .image-container img {
             width: 250px;
-            height: 250px;
         }
     </style>
 </head>
