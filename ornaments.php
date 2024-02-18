@@ -158,6 +158,10 @@ $exe = mysqli_query($con, $query);
                     masonry.layout();
                 });
             });
+
+            setTimeout(function () {
+                masonry.layout();
+            }, 1000);
         });
     </script>
     <script src="assets/js/Animated-Pretty-Product-List-animated-column.js"></script>
