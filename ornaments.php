@@ -99,6 +99,8 @@ $exe = mysqli_query($con, $query);
         integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        var grid = document.querySelector('#masonry');
+        var masonry;
         masonry = new Masonry(grid, {
                 itemSelector: '.col-sm-6',
                 percentPosition: true,
@@ -107,8 +109,6 @@ $exe = mysqli_query($con, $query);
         // Make sure to run this script after the document has loaded
         window.onload = function () {
             masonry.layout();
-            var grid = document.querySelector('#masonry');
-            var masonry;
 
             document.querySelectorAll(".col-sm-6").forEach(element => {
                 gsap.from(element, {
