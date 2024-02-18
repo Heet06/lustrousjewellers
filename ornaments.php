@@ -37,7 +37,7 @@ $exe = mysqli_query($con, $query);
         <h2 class="divider-style"><span>Array Of Ornaments</span></h2>
     </div>
     <div style="scale: 0.9;">
-        <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
+        <div class="row">
             <?php
             while ($row = mysqli_fetch_array($exe)) {
                 $src = explode(',', $row['images']);
@@ -141,6 +141,15 @@ $exe = mysqli_query($con, $query);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
         integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // Add this script at the end of your body or after dynamically adding content
+        var grid = document.querySelector('.row');
+        var masonry = new Masonry(grid, {
+            itemSelector: '.col-sm-6',
+            percentPosition: true
+        });
+
+    </script>
     <script src="assets/js/Animated-Pretty-Product-List-animated-column.js"></script>
     <script src="assets/js/Drag-and-Drop-Multiple-File-Form-Input-upload-Advanced-drop.js"></script>
     <script src="assets/js/theme.js"></script>
