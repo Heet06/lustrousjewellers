@@ -13,7 +13,7 @@
         }
 
         h1{
-            color white!important;;
+            color: white!important;;
         }
     </style>
 </head>
