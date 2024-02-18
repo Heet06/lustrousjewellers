@@ -37,7 +37,7 @@ $exe = mysqli_query($con, $query);
         <h2 class="divider-style"><span>Array Of Ornaments</span></h2>
     </div>
     <div style="scale: 0.9;">
-        <div class="row" data-masonry='{"itemSelector":".col-sm-6.col-lg-4.mb-b"}'>
+        <div class="row" data-masonry-options='{ "itemSelector": ".col-sm-6.col-lg-4.mb-b", "columnWidth": 200 }'>
             <?php
             while ($row = mysqli_fetch_array($exe)) {
                 $src = explode(',', $row['images']);
