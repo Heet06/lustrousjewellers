@@ -94,6 +94,7 @@ $exe = mysqli_query($con, $query);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
         integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -101,10 +102,12 @@ $exe = mysqli_query($con, $query);
         // Make sure to run this script after the document has loaded
         document.addEventListener("DOMContentLoaded", function () {
             var grid = document.querySelector('#masonry');
-            var masonry = new Masonry(grid, {
-                itemSelector: '.col-sm-6',
-                percentPosition: true,
-                columnWidth: '.col-sm-6'
+            imagesLoaded(grid, function () {
+                var masonry = new Masonry(grid, {
+                    itemSelector: '.col-sm-6',
+                    percentPosition: true,
+                    columnWidth: '.col-sm-6'
+                });
             });
 
             document.querySelectorAll(".col-sm-6").forEach(element => {
