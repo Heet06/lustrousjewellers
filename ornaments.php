@@ -110,6 +110,7 @@ $exe = mysqli_query($con, $query);
                     percentPosition: true,
                     columnWidth: '.col-sm-6'
                 });
+                masonry.layout();
 
                 document.querySelectorAll(".col-sm-6").forEach(element => {
                     gsap.from(element, {
@@ -156,7 +157,6 @@ $exe = mysqli_query($con, $query);
                 window.addEventListener('resize', function () {
                     masonry.layout();
                 });
-                masonry.layout();
             });
         });
     </script>
