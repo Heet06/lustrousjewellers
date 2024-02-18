@@ -37,7 +37,7 @@ $exe = mysqli_query($con, $query);
         <h2 class="divider-style"><span>Array Of Ornaments</span></h2>
     </div>
     <div style="scale: 0.9;">
-        <div class="row" data-masonry="{&quot;percentPosition&quot;: true }">
+        <div class="row">
             <?php
             while ($row = mysqli_fetch_array($exe)) {
                 $src = explode(',', $row['images']);
@@ -86,6 +86,16 @@ $exe = mysqli_query($con, $query);
     </div>
     <?php include 'components/footer.php'; ?>
     <script>
+
+        var $container = $('.row');            
+        $container.imagesLoaded(function(){                 
+        $container.masonry({
+            itemSelector: 'col-sm-6.col-lg-4.mb-4',
+            isAnimated: true,
+            columnWidth: 250,
+        });
+        });
+
         document.querySelectorAll(".col-sm-6").forEach(element => {
             gsap.from(element, {
                 y: 200,
