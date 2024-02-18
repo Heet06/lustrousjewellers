@@ -42,7 +42,7 @@ $exe = mysqli_query($con, $query);
             while ($row = mysqli_fetch_array($exe)) {
                 $src = explode(',', $row['images']);
                 ?>
-                <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="col-sm-6 col-lg-4 mb-4" data-scroll data-scroll-speed="0.5">
                     <div class="card">
                         <div id="carousel-<?php echo $row['token']; ?>" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -111,6 +111,22 @@ $exe = mysqli_query($con, $query);
                     columnWidth: '.col-sm-6'
                 });
                 masonry.layout();
+
+                gsap.from(".row", {
+                    y: 200,
+                    opacity: 0,
+                    delay: 0.5,
+                    duration: 0.9,
+                    stagger: 0.3,
+                });
+
+                gsap.from(".divider-style", {
+                    y: -50,
+                    opacity: 0,
+                    delay: 0.5,
+                    duration: 0.9,
+                    stagger: 0.3,
+                });
 
                 document.querySelectorAll("img.d-block").forEach(element => {
                     element.addEventListener("mouseover", function () {
