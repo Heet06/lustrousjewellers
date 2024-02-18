@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" style="font-family: 'Cookie';">
+<html lang="en" style="font-family: cursive;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not Found</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <style>
         body{
+            height: 100%;
+            width: 100%;
             background-color: black;
             display: flex;
             justify-content: center;
@@ -14,7 +15,7 @@
         }
 
         h1{
-            color: white!important;;
+            color: white;
         }
     </style>
 </head>
