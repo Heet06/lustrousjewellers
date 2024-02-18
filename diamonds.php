@@ -85,50 +85,6 @@ $exe = mysqli_query($con, $query);
         </div>
     </div>
     <?php include 'components/footer.php';?>
-    <script>
-    document.querySelectorAll(".col-sm-6").forEach(element => {
-        gsap.from(element, {
-            y: 200,
-            opacity: 0,
-            delay: 0.5,
-            duration: 0.9,
-            stagger: 0.3,
-        }); 
-    });
-
-    gsap.from(".divider-style", {
-        y: -50,
-        opacity: 0,
-        delay: 0.5,
-        duration: 0.9,
-        stagger: 0.3,
-    });
-
-    document.querySelectorAll(".swiper-slide").forEach(element => {
-        gsap.from(element, {
-            y: 150,
-            opacity: 0,
-            delay: 0.5,
-            duration: 0.9,
-            stagger: 0.3,
-        }); 
-    });
-
-    document.querySelectorAll("img.d-block").forEach(element => {
-        element.addEventListener("mouseover", function(){
-            gsap.to(element, {
-                scale: 1.15,
-            });
-        })
-
-        element.addEventListener("mouseleave", function() {
-            gsap.to(element, {
-                scale: 1,
-            });
-        })
-    });
-
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -141,6 +97,59 @@ $exe = mysqli_query($con, $query);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
         integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // Make sure to run this script after the document has loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            var grid = document.querySelector('#masonry');
+            var masonry = new Masonry(grid, {
+                itemSelector: '.col-sm-6',
+                percentPosition: true,
+                columnWidth: '.col-sm-6'
+            });
+
+            document.querySelectorAll(".col-sm-6").forEach(element => {
+                gsap.from(element, {
+                    y: 200,
+                    opacity: 0,
+                    delay: 0.5,
+                    duration: 0.9,
+                    stagger: 0.3,
+                }); 
+            });
+
+            gsap.from(".divider-style", {
+                y: -50,
+                opacity: 0,
+                delay: 0.5,
+                duration: 0.9,
+                stagger: 0.3,
+            });
+
+            document.querySelectorAll(".swiper-slide").forEach(element => {
+                gsap.from(element, {
+                    y: 150,
+                    opacity: 0,
+                    delay: 0.5,
+                    duration: 0.9,
+                    stagger: 0.3,
+                }); 
+            });
+
+            document.querySelectorAll("img.d-block").forEach(element => {
+                element.addEventListener("mouseover", function(){
+                    gsap.to(element, {
+                        scale: 1.15,
+                    });
+                })
+
+                element.addEventListener("mouseleave", function() {
+                    gsap.to(element, {
+                        scale: 1,
+                    });
+                })
+            });
+        });
+    </script>
     <script src="assets/js/Bootstrap-DataTables-main.js"></script>
     <script src="assets/js/Animated-Pretty-Product-List-animated-column.js"></script>
     <script src="assets/js/Drag-and-Drop-Multiple-File-Form-Input-upload-Advanced-drop.js"></script>
