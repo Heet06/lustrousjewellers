@@ -330,7 +330,7 @@ $exe = mysqli_query($con, $query);
       },
 
       autoplay: {
-        delay: 3500, // Time in milliseconds
+        delay: 10000, // Time in milliseconds
         disableOnInteraction: true,
       },
 
