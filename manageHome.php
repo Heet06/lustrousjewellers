@@ -159,7 +159,7 @@ $exe = mysqli_query($con, $query);
             // Send AJAX request
             $.ajax({
                 type: "POST",
-                url: "process.php", // Replace with your server-side script
+                url: "process", // Replace with your server-side script
                 data: { selectedProducts: selectedProducts },
                 success: function (response) {
                     // Handle the response if needed

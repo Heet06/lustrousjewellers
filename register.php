@@ -102,7 +102,7 @@ if (isset($_POST['submit'])) {
                         </div>
                     </div>
                 </div>
-                <p class="text-muted text-center mt-3 mb-0">Already Have an Account<a href="login.php"
+                <p class="text-muted text-center mt-3 mb-0">Already Have an Account<a href="login"
                         class="text-primary ml-1">Login</a></p>
             </div>
         </div>
