@@ -32,11 +32,14 @@
             color: white;
             font-size: 4vh;
         }
+        p {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div id="errorDiv">
-        <p>Sorry! There's some error</p><br>
+        <p>Sorry! There's some error</p><hr>
         <p>Redirecting to Home Page</p>
     </div>
     <script>
