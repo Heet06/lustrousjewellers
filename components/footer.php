@@ -34,7 +34,7 @@ const scroll = new LocomotiveScroll({
     inertia: 0.8,
     smartphone: {
         smooth: true,
-        inertia: 0.8,
+        inertia: 0.5,
     },
 });
 </script>

@@ -11,7 +11,7 @@ function setThemeBasedOnTime() {
     document.documentElement.setAttribute('data-bs-theme', isNightTime ? 'dark' : 'light');
 
     // Store the user's preference in localStorage
-    localStorage.setItem('colorScheme', isNightTime ? 'dark' : 'light');
+    // localStorage.setItem('colorScheme', isNightTime ? 'dark' : 'light');
 }
 
 // Check if the user has a stored preference and set the theme accordingly
