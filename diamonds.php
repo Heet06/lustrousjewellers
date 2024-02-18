@@ -37,7 +37,7 @@ $exe = mysqli_query($con, $query);
         <h2 class="divider-style"><span>Clusters of Diamonds</span></h2>
     </div>
     <div style="scale: 0.9;">
-        <div id="masonry" class="row">
+        <div id="masonry" class="row" data-masonry="{&quot;percentPosition&quot;: true }">
             <?php
             while ($row = mysqli_fetch_array($exe)) {
                 $src = explode(',', $row['images']);
