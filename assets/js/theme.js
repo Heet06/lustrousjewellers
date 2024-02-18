@@ -9,16 +9,6 @@ function setThemeBasedOnTime() {
 
     // Update the data-bs-theme attribute
     document.documentElement.setAttribute('data-bs-theme', isNightTime ? 'dark' : 'light');
-
-    // Store the user's preference in localStorage
-    localStorage.setItem('colorScheme', isNightTime ? 'dark' : 'light');
 }
 
-// Check if the user has a stored preference and set the theme accordingly
-const storedColorScheme = localStorage.getItem('colorScheme');
-if (storedColorScheme) {
-    document.documentElement.setAttribute('data-bs-theme', storedColorScheme);
-} else {
-    // If no preference is stored, set the theme based on the time
-    setThemeBasedOnTime();
-}
+setThemeBasedOnTime();
