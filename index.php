@@ -320,7 +320,7 @@ $exe = mysqli_query($con, $query);
           spaceBetween: 24,
         },
       },
-      speed: 1000,
+      speed: 2000,
       slideActiveClass: "is-active",
       slideDuplicateActiveClass: "is-active",
 
