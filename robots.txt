@@ -1,0 +1,23 @@
+# Disallow crawling of user account pages except for login and registration
+Disallow: /profile
+Disallow: /manage
+Disallow: /manageHome
+Disallow: /myinquiries
+Disallow: /upload
+Disallow: /logout
+Disallow: /error
+Disallow: /upload_backend
+Disallow: /process
+Disallow: /connection
+Disallow: /components/header
+Disallow: /components/footer
+
+# Allow crawling of specific pages
+Allow: /ornaments
+Allow: /diamonds
+Allow: /contact
+Allow: /
+
+# Allow crawling of login and registration pages
+Allow: /login
+Allow: /register
