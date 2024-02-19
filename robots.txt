@@ -1,3 +1,4 @@
+User-agent: *
 # Disallow crawling of user account pages except for login and registration
 Disallow: /profile
 Disallow: /manage
