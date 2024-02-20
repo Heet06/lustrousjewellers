@@ -3,7 +3,7 @@ php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:22346981:
 RewriteEngine On
 
-# Allow access to robots.txt
+# Skip rewriting for robots.txt
 RewriteRule ^robots\.txt$ - [L]
 
 # Redirect requests for PHP files to non-PHP extension
@@ -17,3 +17,9 @@ RewriteRule ^(.+)$ $1.php [NC,L]
 # Redirect HTTP to HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Add the following lines to explicitly allow access to robots.txt
+<Files "robots.txt">
+  Allow from all
+  Satisfy any
+</Files>
