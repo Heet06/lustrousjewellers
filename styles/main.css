@@ -5,8 +5,8 @@
 body {
     background-color: none;
     background: linear-gradient(120deg, #c973ff, #aebaf8);
-    backdrop-filter: blur(10px);
-    /* background-position: center; */
+    /* backdrop-filter: blur(10px); */
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
