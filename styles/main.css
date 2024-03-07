@@ -2,6 +2,12 @@
     min-height: 100vh;
 }
 
+body {
+    background-color: none;
+    background: linear-gradient(120deg, #c973ff, #aebaf8);
+    backdrop-filter: blur(10px);
+}
+
 #login-block {
     -webkit-box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.4);
