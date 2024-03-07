@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css">
 <div id="main">
 <nav class="navbar navbar-expand-md custom-header navbar-light" id="nav">
     <div class="container-fluid">
