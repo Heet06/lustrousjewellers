@@ -1239,6 +1239,7 @@ div.social-links {
     box-sizing: border-box;
     border: 0;
     border-radius: 0;
+    z-index: 9;
 }
 
 .custom-header a.navbar-brand {
