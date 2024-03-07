@@ -1037,7 +1037,7 @@ textarea {
 
 .dropdown-menu .dropdown-item {
     color: white !important;
-    transition: all 2s ease-in-out;
+    transition: all 3ms ease-in-out;
 }
 
 .dropdown-menu .dropdown-item:hover {
