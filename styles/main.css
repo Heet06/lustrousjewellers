@@ -1031,6 +1031,14 @@ textarea {
     border-color: #4daade;
 }
 
+.dropdown-menu {
+    background: black;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 .modern-form {
     padding-top: 80px;
     padding-bottom: 80px;
