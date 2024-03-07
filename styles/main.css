@@ -8,15 +8,6 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.dropdown-menu {
-    background: rgba(0, 0, 0);
-    color: white!important;
-}
-
-.dropdown-item:hover, .dropdown-item:focus {
-    background-color: #33383b !important;
-}
-
 #login-block {
     -webkit-box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.4);
