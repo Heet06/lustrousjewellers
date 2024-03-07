@@ -70,7 +70,7 @@ if (isset($_GET['dd'])) {
             <div class="row py-5">
               <div class="col-lg-10 mx-auto">
                 <div class="card rounded shadow border-0">
-                  <div class="card-body p-5 bg-white rounded">
+                  <div class="card-body p-5 rounded">
                     <div class="table-responsive">
                       <table id="example" style="width:100%" class="table table-striped table-bordered">
                         <thead>
@@ -116,7 +116,7 @@ if (isset($_GET['dd'])) {
             <div class="row py-5">
               <div class="col-lg-10 mx-auto">
                 <div class="card rounded shadow border-0">
-                  <div class="card-body p-5 bg-white rounded">
+                  <div class="card-body p-5 rounded">
                     <div class="table-responsive">
                       <table id="example" style="width:100%" class="table table-striped table-bordered">
                         <thead>

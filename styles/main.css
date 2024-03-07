@@ -1439,7 +1439,8 @@ img.dropdown-image {
 }
 
 .nav-tabs .nav-link.active {
-    border: solid var(--bs-success-border-subtle);
+    border: solid black;
+    background: rgba(0, 0, 0, .1);
     border-width: 0 0 3px 0;
     font-weight: bold;
 }
@@ -1460,35 +1461,4 @@ img.dropdown-image {
 #submitBtn {
     padding: 10px 40px;
     float: left;
-}
-
-[data-bs-theme="dark"] {
-    .divider-style span {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .card {
-        background-color: rgba(146, 144, 195, 0.2);
-        backdrop-filter: blur(10px);
-    }
-
-    .card-body.p-5.rounded {
-        background: transparent!important;
-    }
-
-    .text-muted, .display-4 {
-        color: white!important;
-    }
-
-    .nav-tabs .nav-link.active {
-        border: solid #0dcaf0;
-    }
-
-    #main > section.getintouch > div > div.text-center > h4 {
-        color: var(--bs-body-color)!important;
-    }
-
-    .modern-form__hr {
-        color: rgb(0, 255, 189);
-    }
 }
