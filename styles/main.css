@@ -15,6 +15,14 @@ body {
     background: rgba(0, 0, 0);
 }
 
+.dropdown-item {
+    background-color: #3a3c3e;
+}
+
+.dropdown-item:hover {
+    background-color: #33383b;
+}
+
 #login-block {
     -webkit-box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.4);
