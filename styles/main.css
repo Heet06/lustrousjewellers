@@ -1033,6 +1033,9 @@ textarea {
 
 .dropdown-menu {
     background: black;
+}
+
+.dropdown-menu .dropdown-item {
     color: white !important;
 }
 
