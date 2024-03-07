@@ -1155,7 +1155,7 @@ footer {
 }
 
 .footer-navigation p.company-name {
-    color: #8f9296;
+    color: white;
     font-size: 14px;
     font-weight: normal;
     margin-top: 20px;
@@ -1209,7 +1209,7 @@ span.new-line-span {
 
 .footer-about p {
     line-height: 20px;
-    color: #92999f;
+    color: #fff;
     font-size: 13px;
     font-weight: normal;
     margin: 0;
