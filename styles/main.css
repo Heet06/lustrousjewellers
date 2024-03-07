@@ -11,7 +11,6 @@ body {
 .dropdown-menu {
     background: rgba(0, 0, 0);
     color: white!important;
-    z-index: 99999;
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
