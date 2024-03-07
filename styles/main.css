@@ -348,7 +348,7 @@ svg {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
     backdrop-filter: blur(20px);
     background-clip: border-box;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
