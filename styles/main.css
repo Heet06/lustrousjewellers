@@ -12,8 +12,7 @@ body {
 }
 
 .dropdown-menu {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0);
 }
 
 #login-block {
