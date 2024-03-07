@@ -15,12 +15,8 @@ body {
     background: rgba(0, 0, 0);
 }
 
-.dropdown-item {
-    background-color: #3a3c3e;
-}
-
-.dropdown-item:hover {
-    background-color: #33383b;
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #33383b !important;
 }
 
 #login-block {
