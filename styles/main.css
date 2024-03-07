@@ -1033,11 +1033,12 @@ textarea {
 
 .dropdown-menu {
     background: black;
-    color: white;
+    color: white !important;
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: white !important;
+    color: black !important;
 }
 
 .modern-form {
