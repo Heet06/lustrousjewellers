@@ -46,16 +46,4 @@
             scrub: true,
         },
     });
-
-    gsap.to('.navbar-nav.links', {
-        visibility: 'none',
-        scrollTrigger: {
-            trigger: '#main',
-            scroller: 'body',
-            markers: false,
-            start: 'top 0%',
-            end: 'top -100%',
-            scrub: true,
-        },
-    });
 </script>
