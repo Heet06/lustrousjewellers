@@ -35,7 +35,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    var nice = jQuery("html").niceScroll({
+    var nice = jQuery("#main").niceScroll({
         cursorcolor:"#ccc",
         cursorborder :"0px solid #fff",			
         railpadding:{top:0,right:0,left:0,bottom:0},
