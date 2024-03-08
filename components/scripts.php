@@ -48,7 +48,7 @@
     });
 
     gsap.to('.navbar-nav.links', {
-        transform: `translate(0, -50%)`,
+        transform: `translate(0, -100%)`,
         scrollTrigger: {
             trigger: '#main',
             scroller: 'body',
