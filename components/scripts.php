@@ -46,7 +46,7 @@
         },
     });
 
-    gsap.to('body' {
+    gsap.to('body', {
         background: `linear-gradient(120deg, #4e7ed6, #cd3df6)`,
         scrollTrigger: {
             trigger: '#main',
