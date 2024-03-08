@@ -81,56 +81,56 @@ $exe = mysqli_query($con, $query);
             percentPosition: true,
             columnWidth: '.col-sm-6'
         });
-        // Make sure to run this script after the document has loaded
-        window.onload = function () {
-            masonry.layout();
 
-            document.querySelectorAll(".col-sm-6").forEach(element => {
-                gsap.from(element, {
-                    y: 200,
-                    opacity: 0,
-                    delay: 0.5,
-                    duration: 0.9,
-                    stagger: 0.3,
-                });
+        masonry.layout();
+
+        document.querySelectorAll(".col-sm-6").forEach(element => {
+            gsap.from(element, {
+                y: 200,
+                opacity: 0,
+                delay: 0.5,
+                duration: 0.9,
+                stagger: 0.3,
+                scale: 0.5,
             });
+        });
+        
 
-            gsap.from(".divider-style", {
-                y: -50,
+        gsap.from(".divider-style", {
+            y: -50,
+            opacity: 0,
+            delay: 0.5,
+            duration: 0.9,
+            stagger: 0.3,
+        });
+
+        document.querySelectorAll(".swiper-slide").forEach(element => {
+            gsap.from(element, {
+                y: 150,
                 opacity: 0,
                 delay: 0.5,
                 duration: 0.9,
                 stagger: 0.3,
             });
+        });
 
-            document.querySelectorAll(".swiper-slide").forEach(element => {
-                gsap.from(element, {
-                    y: 150,
-                    opacity: 0,
-                    delay: 0.5,
-                    duration: 0.9,
-                    stagger: 0.3,
+        document.querySelectorAll("img.d-block").forEach(element => {
+            element.addEventListener("mouseover", function () {
+                gsap.to(element, {
+                    scale: 1.15,
                 });
-            });
+            })
 
-            document.querySelectorAll("img.d-block").forEach(element => {
-                element.addEventListener("mouseover", function () {
-                    gsap.to(element, {
-                        scale: 1.15,
-                    });
-                })
+            element.addEventListener("mouseleave", function () {
+                gsap.to(element, {
+                    scale: 1,
+                });
+            })
+        });
 
-                element.addEventListener("mouseleave", function () {
-                    gsap.to(element, {
-                        scale: 1,
-                    });
-                })
-            });
-
-            window.addEventListener('resize', function () {
-                masonry.layout();
-            });
-        }
+        window.addEventListener('resize', function () {
+            masonry.layout();
+        });
     </script>
 </body>
 
