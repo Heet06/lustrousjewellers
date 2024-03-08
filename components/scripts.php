@@ -41,7 +41,7 @@
             scroller: 'body',
             markers: false,
             start: 'top 0%',
-            end: 'top -75%',
+            end: 'top -200%',
             scrub: true,
         },
     });
