@@ -28,7 +28,7 @@
     gsap.to('#nav',
         {
             width: '80%',
-            padding: '10%',
+            margin: '10%',
             scrollTrigger: {
                 trigger: '#main',
                 scroller: 'body',
