@@ -29,6 +29,7 @@
         {
             width: '80%',
             margin: '10%',
+            borderRadius: '30px',
             scrollTrigger: {
                 trigger: '#main',
                 scroller: 'body',
