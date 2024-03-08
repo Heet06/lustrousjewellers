@@ -429,6 +429,7 @@ svg {
 
 .divider-style span {
     background: black;
+    color: white;
     border-radius: 15px;
     backdrop-filter: blur(10px);
     padding: 0 20px;
