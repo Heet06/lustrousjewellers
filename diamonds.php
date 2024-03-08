@@ -75,6 +75,7 @@ $exe = mysqli_query($con, $query);
     <?php include 'components/footer.php'; ?>
     <?php include 'components/scripts.php'; ?>
     <script async>
+        gsap.from(".col-sm-6", { opacity: 0, duration: 1, delay: 0.5 });
         var grid = document.querySelector('#masonry');
         var masonry;
         masonry = new Masonry(grid, {
