@@ -28,6 +28,7 @@
     gsap.to('#nav',
         {
             width: '80%',
+            padding: '10%',
             scrollTrigger: {
                 trigger: '#main',
                 scroller: 'body',
@@ -36,5 +37,6 @@
                 end: 'top -100%',
                 scrub: true,
             },
-        });
+        }
+    );
 </script>
