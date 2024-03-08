@@ -25,8 +25,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script async>
-    gsap.to('#nav',
-        {
+    gsap.to('#nav', {
             width: '80%',
             margin: '10%',
             borderRadius: '30px',
@@ -40,6 +39,18 @@
                 end: 'top -100%',
                 scrub: true,
             },
-        }
-    );
+    });
+
+    gsap.to('footer', {
+        width: '100%',
+        backdropFilter: `blur(100px)`,
+        scrollTrigger: {
+            trigger: '#main',
+            scroller: 'body',
+            markers: false,
+            start: 'top 0%',
+            end: 'top -100%',
+            scrub: true,
+        },
+    });
 </script>
