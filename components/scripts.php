@@ -35,7 +35,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    var nice = jQuery("html").niceScroll();
+    var nice = jQuery("body").niceScroll();
 
     gsap.to('#nav', {
         width: '95%',
