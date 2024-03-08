@@ -35,25 +35,13 @@
         width: '95%',
         margin: '2.5%',
         borderRadius: '20px',
-        marginTop: '20%',
+        top: '20%',
         scrollTrigger: {
             trigger: '#main',
             scroller: 'body',
             markers: false,
             start: 'top 0%',
             end: 'top -100%',
-            scrub: true,
-        },
-    });
-
-    gsap.to('#main', {
-        scale: 1,
-        scrollTrigger: {
-            trigger: '#main',
-            scroller: 'body',
-            markers: false,
-            start: 'top 20%',
-            end: 'top 40%',
             scrub: true,
         },
     });
