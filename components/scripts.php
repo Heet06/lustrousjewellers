@@ -49,11 +49,11 @@
     gsap.to('#nav', {
         transform: `translate(0, -100%)`,
         scrollTrigger: {
-            trigger: 'footer',
+            trigger: '#main',
             scroller: 'body',
             markers: false,
-            start: 'top 100%',
-            end: 'top 50%',
+            start: 'top -100%',
+            end: 'top -150%',
             scrub: true,
         },
     });
