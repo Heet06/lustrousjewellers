@@ -52,8 +52,8 @@
             trigger: '#main',
             scroller: 'body',
             markers: false,
-            start: 'top 10%',
-            end: 'top -5000%',
+            start: 'top 50%',
+            end: 'top -50%',
             scrub: true,
         },
     });
