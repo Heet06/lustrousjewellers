@@ -45,16 +45,4 @@
             scrub: true,
         },
     });
-
-    gsap.to('#nav', {
-        transform: `translate(0, -150%)`,
-        scrollTrigger: {
-            trigger: '#main',
-            scroller: 'body',
-            markers: false,
-            start: 'top -120%',
-            end: 'top -140%',
-            scrub: true,
-        },
-    });
 </script>
