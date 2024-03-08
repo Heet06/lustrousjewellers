@@ -297,10 +297,6 @@ $exe = mysqli_query($con, $query);
     integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="assets/js/theme.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.js" integrity="sha512-5AcaBUUUU/lxSEeEcruOIghqABnXF8TWqdIDXBZ2SNEtrTGvD408W/ShtKZf0JNjQUfOiRBJP+yHk6Ab2eFw3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script async>
-      $('#main').scrollbar();
-  </script>
   <script>
     const swiper = new Swiper(".swiper", {
       // Optional parameters
