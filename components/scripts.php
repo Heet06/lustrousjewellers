@@ -35,7 +35,7 @@
         width: '95%',
         margin: '2.5%',
         borderRadius: '20px',
-        top: '20%',
+        top: '10%',
         scrollTrigger: {
             trigger: '#main',
             scroller: 'body',
