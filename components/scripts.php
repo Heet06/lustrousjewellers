@@ -46,13 +46,14 @@
         margin: '0%',
         marginLeft: '0%',
         marginRight: '0%',
+        borderRadius: '0',
         backdropFilter: `blur(100px)`,
         scrollTrigger: {
             trigger: 'footer',
             scroller: 'body',
             markers: false,
             start: 'top 100%',
-            end: 'top -200%',
+            end: 'top 20%',
             scrub: true,
         },
     });
