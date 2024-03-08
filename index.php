@@ -61,7 +61,7 @@ $exe = mysqli_query($con, $query);
   </div>
   <?php include 'components/footer.php'; ?>
   <?php include 'components/scripts.php'; ?>
-  <script>
+  <script async>
     const swiper = new Swiper(".swiper", {
       // Optional parameters
       direction: "horizontal",

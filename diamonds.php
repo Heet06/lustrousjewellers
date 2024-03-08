@@ -74,7 +74,7 @@ $exe = mysqli_query($con, $query);
     </div>
     <?php include 'components/footer.php'; ?>
     <?php include 'components/scripts.php'; ?>
-    <script>
+    <script async>
         var grid = document.querySelector('#masonry');
         var masonry;
         masonry = new Masonry(grid, {

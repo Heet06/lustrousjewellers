@@ -15,8 +15,8 @@
 
 <link rel="icon" href="logo.png">
 
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
     integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <meta name="google-site-verification" content="UhQqgP2wOnlXe6q4ufx2LM8KZl14jUq8mBDkbIW-82c" />
+<meta name="google-site-verification" content="UhQqgP2wOnlXe6q4ufx2LM8KZl14jUq8mBDkbIW-82c" />
