@@ -12,7 +12,7 @@ if (!isset($_SESSION['auth'])) {
 
 <head>
     <title>LustrousJewellers</title>
-    <?php include 'components/scripts.php'; ?>
+    <?php include 'components/links.php'; ?>
     <link rel="stylesheet" href="styles/main.css">
     <style>
         .image-container {
