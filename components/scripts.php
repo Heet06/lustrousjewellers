@@ -46,7 +46,7 @@
         },
     });
 
-    gsap.to('#nav', {
+    gsap.to('#main', {
         scale: 1,
         scrollTrigger: {
             trigger: '#main',
