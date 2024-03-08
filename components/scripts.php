@@ -32,9 +32,9 @@
 
 <script>
     gsap.to('#nav', {
-        width: '90%',
-        margin: '5%',
-        borderRadius: '30px',
+        width: '95%',
+        margin: '2.5%',
+        borderRadius: '20px',
         marginTop: '20%',
         scrollTrigger: {
             trigger: '#main',
