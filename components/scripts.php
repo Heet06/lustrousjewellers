@@ -35,17 +35,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    var nice = jQuery("#main").niceScroll({
-        cursorcolor:"#ccc",
-        cursorborder :"0px solid #fff",			
-        railpadding:{top:0,right:0,left:0,bottom:0},
-        cursorwidth:"15px",
-        cursorborderradius:"0px",
-        cursoropacitymin:0,
-        cursoropacitymax:0.7,
-        boxzoom:true,
-        autohidemode:true
-    }); 
+    var nice = jQuery("html").niceScroll();
 
     gsap.to('#nav', {
         width: '95%',
