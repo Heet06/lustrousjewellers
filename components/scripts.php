@@ -30,6 +30,7 @@
             width: '80%',
             margin: '10%',
             borderRadius: '30px',
+            marginTop: '20%',
             scrollTrigger: {
                 trigger: '#main',
                 scroller: 'body',
