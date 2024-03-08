@@ -3,10 +3,8 @@
         <div><a class="navbar-brand" href="/">Lustrous <span>Jewellers</span> </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbar-collapse"><span class="visually-hidden">Toggle navigation</span><i class="fa fa-bars" aria-hidden="true" style="color: silver;"></i></button></div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="navbar-nav links">
-                <li class="nav-item"><a class="nav-link" href="/"><span style="color: rgb(255, 255, 255);">Home</span></a></li>
                 <li class="nav-item"><a class="nav-link" href="ornaments"><span style="color: rgb(255, 255, 255);">Ornaments</span></a></li>
                 <li class="nav-item"><a class="nav-link" href="diamonds"><span style="color: rgb(255, 255, 255);">Diamonds</span></a></li>
-                <li class="nav-item"><a class="nav-link custom-navbar" href="contact"><span style="color: rgb(255, 255, 255);">Contact us</span></a></li>
             </ul>
             <?php if (isset($_SESSION['auth'])){
             ?>
