@@ -30,7 +30,23 @@
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"
+    integrity="sha512-zMfrMAZYAlNClPKjN+JMuslK/B6sPM09BGvrWlW+cymmPmsUT1xJF3P4kxI3lOh9zypakSgWaTpY6vDJY/3Dig=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script>
+    var nice = jQuery("html").niceScroll({
+        cursorcolor:"#ccc",
+        cursorborder :"0px solid #fff",			
+        railpadding:{top:0,right:0,left:0,bottom:0},
+        cursorwidth:"15px",
+        cursorborderradius:"0px",
+        cursoropacitymin:0,
+        cursoropacitymax:0.7,
+        boxzoom:true,
+        autohidemode:true
+    }); 
+
     gsap.to('#nav', {
         width: '95%',
         margin: '2.5%',
