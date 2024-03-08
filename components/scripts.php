@@ -45,4 +45,16 @@
             scrub: true,
         },
     });
+
+    gsap.to('#nav', {
+        scale: 1,
+        scrollTrigger: {
+            trigger: '#main',
+            scroller: 'body',
+            markers: false,
+            start: 'top 20%',
+            end: 'top 40%',
+            scrub: true,
+        },
+    });
 </script>
