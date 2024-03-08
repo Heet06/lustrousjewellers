@@ -30,11 +30,7 @@
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://assets.codepen.io/16327/ScrollSmoother.min.js?v=3.12"></script>
-
 <script>
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-    
     gsap.to('#nav', {
         width: '80%',
         margin: '10%',
