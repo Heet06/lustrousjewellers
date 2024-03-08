@@ -32,18 +32,30 @@
 
 <script>
     gsap.to('#nav', {
-            width: '80%',
-            margin: '10%',
-            borderRadius: '30px',
-            backdropFilter: `blur(100px)`,
-            marginTop: '20%',
-            scrollTrigger: {
-                trigger: '#main',
-                scroller: 'body',
-                markers: false,
-                start: 'top 0%',
-                end: 'top -100%',
-                scrub: true,
-            },
+        width: '80%',
+        margin: '10%',
+        borderRadius: '30px',
+        backdropFilter: `blur(100px)`,
+        marginTop: '20%',
+        scrollTrigger: {
+            trigger: '#main',
+            scroller: 'body',
+            markers: false,
+            start: 'top 0%',
+            end: 'top -100%',
+            scrub: true,
+        },
+    });
+
+    gsap.to('.navbar-nav.links', {
+        transform: `translate(0, -50%)`,
+        scrollTrigger: {
+            trigger: '#main',
+            scroller: 'body',
+            markers: false,
+            start: 'top 0%',
+            end: 'top -100%',
+            scrub: true,
+        },
     });
 </script>
