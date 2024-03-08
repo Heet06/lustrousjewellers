@@ -35,7 +35,7 @@
         width: '80%',
         margin: '10%',
         borderRadius: '30px',
-        backdropFilter: `blur(100px)`,
+        backdropFilter: `blur(200px)`,
         marginTop: '20%',
         scrollTrigger: {
             trigger: '#main',
