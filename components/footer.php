@@ -1,3 +1,4 @@
+</div>
 <footer>
     <div class="row">
         <div class="col-sm-6 col-md-4 footer-navigation">
@@ -24,4 +25,3 @@
         </div>
     </div>
 </footer>
-</div>

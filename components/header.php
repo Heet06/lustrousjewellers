@@ -1,4 +1,3 @@
-<div id="main">
 <nav class="navbar navbar-expand-md custom-header navbar-light" id="nav">
     <div class="container-fluid">
         <div><a class="navbar-brand" href="/">Lustrous <span>Jewellers</span> </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbar-collapse"><span class="visually-hidden">Toggle navigation</span><i class="fa fa-bars" aria-hidden="true" style="color: silver;"></i></button></div>
@@ -40,3 +39,4 @@
         </div>
     </div>
 </nav>
+<div id="main">
