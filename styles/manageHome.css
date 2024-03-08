@@ -1,0 +1,16 @@
+#preview {
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+.card-img {
+    margin-right: 10px;
+    height: 100%;
+    min-width: 200px;
+}
+
+.product-card {
+    width: 80vw;
+}

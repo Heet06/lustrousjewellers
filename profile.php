@@ -38,19 +38,8 @@ if (isset($_POST['submit'])) {
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>LustrousJewellers</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="logo.png">
+    <?php include 'components/links.php'; ?>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -107,6 +96,7 @@ if (isset($_POST['submit'])) {
         </div>
     </div>
     <?php include 'components/footer.php'; ?>
+    <?php include 'components/scripts.php'; ?>
     <script>
         function validateForm() {
             var name = document.getElementById("name").value;
@@ -165,13 +155,6 @@ if (isset($_POST['submit'])) {
             return res;
         }
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
