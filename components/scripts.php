@@ -53,7 +53,7 @@
             scroller: 'body',
             markers: false,
             start: 'top 50%',
-            end: 'top -50%',
+            end: 'top 0%',
             scrub: true,
         },
     });
