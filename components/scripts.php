@@ -53,7 +53,7 @@
             scroller: 'body',
             markers: false,
             start: 'top 0%',
-            end: 'top -10%',
+            end: 'top -30%',
             scrub: true,
         },
     });
@@ -64,8 +64,8 @@
             trigger: '#main',
             scroller: 'body',
             markers: false,
-            start: 'top -10%',
-            end: 'top -20%',
+            start: 'top -50%',
+            end: 'top -70%',
             scrub: true,
         },
     });
