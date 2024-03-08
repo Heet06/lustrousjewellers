@@ -52,8 +52,8 @@
             trigger: '#main',
             scroller: 'body',
             markers: false,
-            start: 'top 0%',
-            end: 'top -30%',
+            start: 'top 30%',
+            end: 'top -60%',
             scrub: true,
         },
     });
@@ -64,8 +64,8 @@
             trigger: '#main',
             scroller: 'body',
             markers: false,
-            start: 'top -50%',
-            end: 'top -70%',
+            start: 'top -60%',
+            end: 'top -90%',
             scrub: true,
         },
     });
