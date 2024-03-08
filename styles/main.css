@@ -1248,6 +1248,7 @@ div.social-links {
 
 .custom-header {
     position: sticky;
+    top: 0;
     background: rgb(42, 42, 42, 0.5) !important;
     backdrop-filter: blur(100px);background: #292c2f;
     padding: 20px 40px;
