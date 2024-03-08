@@ -93,8 +93,10 @@ $exe = mysqli_query($con, $query);
                     delay: 0.5,
                     duration: 0.9,
                     stagger: 0.3,
+                    scale: 0.5,
                 });
             });
+            
 
             gsap.from(".divider-style", {
                 y: -50,
