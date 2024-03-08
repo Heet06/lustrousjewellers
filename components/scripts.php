@@ -43,13 +43,16 @@
 
     gsap.to('footer', {
         width: '100%',
+        margin: '0%',
+        marginLeft: '0%',
+        marginRight: '0%',
         backdropFilter: `blur(100px)`,
         scrollTrigger: {
-            trigger: '#main',
+            trigger: 'footer',
             scroller: 'body',
             markers: false,
-            start: 'top 0%',
-            end: 'top -100%',
+            start: 'top 100%',
+            end: 'top -200%',
             scrub: true,
         },
     });
