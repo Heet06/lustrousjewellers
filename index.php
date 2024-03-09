@@ -16,7 +16,6 @@ $exe = mysqli_query($con, $query);
 
 <body>
   <?php include 'components/header.php'; ?>
-  <div class="powr-multi-slider" id="6e1610ac_1710002425"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
   <div class="section">
     <div class="container">
       <div class="swiper">
