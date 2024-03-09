@@ -365,6 +365,6 @@ img.dropdown-image {
     color: #e9ac09 !important;
 }
 
-.navbar > .container-fluid {
+.navbar>.container-fluid {
     justify-content: space-evenly;
 }

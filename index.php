@@ -9,7 +9,7 @@ $exe = mysqli_query($con, $query);
 
 <head>
   <title>LustrousJewellers</title>
-  <?php include 'components/links.php';?>
+  <?php include 'components/links.php'; ?>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/swipe.css">
 </head>

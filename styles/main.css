@@ -1457,7 +1457,7 @@ img.dropdown-image {
     padding: 1rem;
 }
 
-.navbar > .container-fluid {
+.navbar>.container-fluid {
     justify-content: space-evenly;
 }
 

@@ -95,7 +95,7 @@ $exe = mysqli_query($con, $query);
                 scale: 0.8,
             });
         });
-        
+
 
         gsap.from(".divider-style", {
             y: -50,

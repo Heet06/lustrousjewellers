@@ -3,7 +3,8 @@
     <div class="row">
         <div class="col-sm-6 col-md-4 footer-navigation">
             <h3><a href="#">Lustrous <span>Jewellers</span></a></h3>
-            <p class="links"><a href="/">Home</a><strong> · </strong><a href="ornaments">Ornaments</a><strong> · </strong><a href="diamonds">Diamonds</a><strong> · </strong><a href="contact">Contact</a></p>
+            <p class="links"><a href="/">Home</a><strong> · </strong><a href="ornaments">Ornaments</a><strong> ·
+                </strong><a href="diamonds">Diamonds</a><strong> · </strong><a href="contact">Contact</a></p>
             <p class="company-name">Lustrous Jewellers © 2024 </p>
         </div>
         <div class="col-sm-6 col-md-4 footer-contacts">
@@ -21,7 +22,9 @@
         <div class="col-md-4 footer-about">
             <h4>About the company</h4>
             <p> Lustrous Jewellers is one stop jewellery site where you would find everything. </p>
-            <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+            <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i
+                        class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i
+                        class="fa fa-github"></i></a></div>
         </div>
     </div>
 </footer>
