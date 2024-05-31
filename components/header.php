@@ -16,7 +16,7 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
                             <img class="dropdown-image" src="assets/images/avatar.png">
-                            <? echo $_SESSION['userdetails']['name']; ?>
+                            <? echo "Welcome", $_SESSION['userdetails']['name']; ?>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="profile">Manage Profile</a>
