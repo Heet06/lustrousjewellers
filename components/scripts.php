@@ -31,18 +31,5 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    gsap.to('#nav', {
-        width: '95%',
-        margin: '2.5%',
-        borderRadius: '20px',
-        top: '5px',
-        scrollTrigger: {
-            trigger: '#main',
-            scroller: 'body',
-            markers: false,
-            start: 'top 0%',
-            end: 'top -100%',
-            scrub: true,
-        },
-    });
+
 </script>
