@@ -5,7 +5,7 @@ if (!isset($_SESSION['auth'])) {
 } elseif (!($_SESSION['userdetails']['email'] == "mukeshkhunt9@gmail.com")) {
   header("Location: /");
 }
-include 'connection.php';
+include 'scripts/connection.php';
 $ornaments_query = "select * from ornaments";
 $diamonds_query = "select * from diamonds";
 
@@ -36,7 +36,7 @@ if (isset($_GET['dd'])) {
 <head>
   <title>LustrousJewellers</title>
   <?php include 'components/links.php'; ?>
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>

@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password_get = test_input($_POST['password']);
 }
 
-include 'connection.php';
+include 'scripts/connection.php';
 if (isset($_POST['submit'])) {
     $id = $_SESSION['userdetails']['id'];
     $updatequery = "update users set `name` = '$name_get', `email`='$email_get', `password`='$password_get' WHERE `id`='$id';";
@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
 <head>
     <title>LustrousJewellers</title>
     <?php include 'components/links.php'; ?>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>

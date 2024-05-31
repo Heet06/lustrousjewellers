@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'connection.php';
+include 'scripts/connection.php';
 $query = 'select * from diamonds';
 $exe = mysqli_query($con, $query);
 ?>
@@ -11,8 +11,8 @@ $exe = mysqli_query($con, $query);
 <head>
     <title>LustrousJewellers</title>
     <?php include 'components/links.php'; ?>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="icon" href="assets/images/logo.png">
 </head>
 
 <body>

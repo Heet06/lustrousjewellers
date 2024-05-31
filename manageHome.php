@@ -5,7 +5,7 @@ if (!isset($_SESSION['auth'])) {
 } elseif (!($_SESSION['userdetails']['email'] == "mukeshkhunt9@gmail.com")) {
     header("Location: /");
 }
-include 'connection.php';
+include 'scripts/connection.php';
 $query = "SELECT * FROM ornaments UNION ALL SELECT * FROM diamonds";
 $exe = mysqli_query($con, $query);
 ?>
@@ -15,8 +15,7 @@ $exe = mysqli_query($con, $query);
 <head>
     <title>LustrousJewellers</title>
     <?php include 'components/links.php'; ?>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/manageHome.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>
@@ -123,7 +122,7 @@ $exe = mysqli_query($con, $query);
             // Send AJAX request
             $.ajax({
                 type: "POST",
-                url: "process", // Replace with your server-side script
+                url: "scripts/process", // Replace with your server-side script
                 data: { selectedProducts: selectedProducts },
                 success: function (response) {
                     // Handle the response if needed

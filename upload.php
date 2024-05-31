@@ -13,7 +13,7 @@ if (!isset($_SESSION['auth'])) {
 <head>
     <title>LustrousJewellers</title>
     <?php include 'components/links.php'; ?>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
     <style>
         .image-container {
             display: inline-block;
@@ -106,7 +106,7 @@ if (!isset($_SESSION['auth'])) {
             var formData = new FormData($('#productForm')[0]);
 
             $.ajax({
-                url: 'upload_backend',
+                url: 'scripts/upload_backend',
                 type: 'POST',
                 data: formData,
                 processData: false,

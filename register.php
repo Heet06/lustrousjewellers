@@ -13,7 +13,7 @@ function test_input($data)
     return $data;
 }
 
-include 'connection.php';
+include 'scripts/connection.php';
 
 if (isset($_POST['submit'])) {
     $searchquery = "SELECT * from users WHERE email = '$email_get'";
@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
 <head>
     <title>LustrousJewellers</title>
     <?php include 'components/links.php'; ?>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>
