@@ -16,34 +16,24 @@ $result = mysqli_query($con, $query);
 
 <body>
     <?php include 'components/header.php'; ?>
-    <div class="section">
-        <div class="container">
-            <div class="swiper">
-                <div class="swiper-wrapper">
+    <div class="contain">
+        <main>
+            <h1>Our Top Sellers</h1>
+
+            <div class="slider">
+                <div class="slide-row" id="slide-row">
                     <?php $count = 1;
                     while ($row = mysqli_fetch_array($result)) {
                         $src = explode(',', $row['images']);
                         ?>
-                        <div class="swiper-slide">
-                            <div class="people__card">
-                                <img src="<?php echo $src[0] ?>" class="people__card__image" />
-                                <div class="people__card__content">
-                                    <div class="slide__number"><?php echo $count; ?></div>
-                                    <div class="slide__title"><?php echo $row['name']; ?></div>
-                                    <div class="slide__subtitle"><?php echo $row['description']; ?></div>
-                                    <a href="#" class="slide__btn">
-                                        <span class="slide__btn__text">Own It Now</span>
-                                        <span class="slide__btn__icon">
-                                            <svg width="100%" height="100%" viewBox="0 0 17 21" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="slide__gradient"></div>
+                        <div class="slide-col">
+                            <div class="content">
+                                <p><?php echo $row['description']; ?></p>
+                                <h2><?php echo $row['name']; ?></h2>
+                                <p>#<?php echo $count; ?></p>
+                            </div>
+                            <div class="hero">
+                                <img src="<?php echo $src[0]; ?>" alt="avatar">
                             </div>
                         </div>
                         <?php
@@ -52,50 +42,17 @@ $result = mysqli_query($con, $query);
                     ?>
                 </div>
             </div>
-        </div>
+
+            <div class="indicator">
+                <?php for ($i = 1; $i < $count; $i++) { ?>
+                    <span class="btn <?php echo ($i == 0) ? "active" : ""; ?>"></span>
+                <?php } ?>
+            </div>
+        </main>
     </div>
     <?php include 'components/footer.php'; ?>
     <?php include 'components/scripts.php'; ?>
-    <script async>
-        const swiper = new Swiper(".swiper", {
-            direction: "horizontal",
-            grabCursor: true,
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            centeredSlides: false,
-            loop: true,
-            spaceBetween: 10,
-            mousewheel: {
-                forceToAxis: true
-            },
-            breakpoints: {
-                767: {
-                    slidesPerView: 2,
-                    spaceBetween: 24,
-                },
-                1699: {
-                    slidesPerView: 3,
-                    spaceBetween: 24,
-                },
-            },
-            speed: 1500,
-            slideActiveClass: "is-active",
-            slideDuplicateActiveClass: "is-active",
-            keyboard: {
-                enabled: true,
-                onlyInViewport: false,
-            },
-            autoplay: {
-                delay: 8000,
-                disableOnInteraction: true,
-            },
-            lazy: {
-                loadPrevNext: true,
-            },
-            preventClicks: false,
-            preventClicksPropagation: false,
-        });
-    </script>
+    <script async src="assets/js/swipe.js"></script>
 </body>
 
 </html>
