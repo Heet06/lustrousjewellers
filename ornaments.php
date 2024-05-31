@@ -24,7 +24,7 @@ $exe = mysqli_query($con, $query);
         <h2 class="divider-style"><span>Array Of Ornaments</span></h2>
     </div>
     <div style="scale: 0.9;">
-        <div id="masonry" class="row" data-masonry="{&quot;percentPosition&quot;: true }">
+        <div id="masonry" class="row">
             <?php
             while ($row = mysqli_fetch_array($exe)) {
                 $src = explode(',', $row['images']);
@@ -73,65 +73,6 @@ $exe = mysqli_query($con, $query);
     </div>
     <?php include 'components/footer.php'; ?>
     <?php include 'components/scripts.php'; ?>
-    <script async>
-        var grid = document.querySelector('#masonry');
-        var masonry;
-        masonry = new Masonry(grid, {
-            itemSelector: '.col-sm-6',
-            percentPosition: true,
-            columnWidth: '.col-sm-6'
-        });
-
-        masonry.layout();
-
-        document.querySelectorAll(".col-sm-6").forEach(element => {
-            gsap.from(element, {
-                y: 200,
-                opacity: 0,
-                delay: 0.5,
-                duration: 0.9,
-                stagger: 0.3,
-                scale: 0.8,
-            });
-        });
-
-
-        gsap.from(".divider-style", {
-            y: -50,
-            opacity: 0,
-            delay: 0.5,
-            duration: 0.9,
-            stagger: 0.3,
-        });
-
-        document.querySelectorAll(".swiper-slide").forEach(element => {
-            gsap.from(element, {
-                y: 150,
-                opacity: 0,
-                delay: 0.5,
-                duration: 0.9,
-                stagger: 0.3,
-            });
-        });
-
-        document.querySelectorAll("img.d-block").forEach(element => {
-            element.addEventListener("mouseover", function () {
-                gsap.to(element, {
-                    scale: 1.15,
-                });
-            })
-
-            element.addEventListener("mouseleave", function () {
-                gsap.to(element, {
-                    scale: 1,
-                });
-            })
-        });
-
-        window.addEventListener('resize', function () {
-            masonry.layout();
-        });
-    </script>
 </body>
 
 </html>
