@@ -46,3 +46,11 @@ function startAutoplay() {
 }
 
 startAutoplay();
+
+document.addEventListener('DOMContentLoaded', function () {
+    var itemSlider = new bootstrap.Carousel(document.getElementById('itemslider'), {
+        interval: 3000,
+        slidesPerView: 3, // Number of items to show at once
+        wrap: false // Set to true if you want looping
+    });
+});

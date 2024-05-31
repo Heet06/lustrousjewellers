@@ -1,4 +1,5 @@
 <?php
+session_name("Authentication");
 session_start();
 ?>
 <!DOCTYPE html>

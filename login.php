@@ -1,4 +1,5 @@
 <?php
+session_name("Authentication");
 session_start();
 session_unset();
 session_destroy();
@@ -23,6 +24,7 @@ if (isset($_POST['submit'])) {
     $user = mysqli_fetch_array($authenticate);
 
     if ($match) {
+        session_name("Authentication");
         session_start();
         $_SESSION['userdetails'] = $user;
         $_SESSION['auth'] = "true";
