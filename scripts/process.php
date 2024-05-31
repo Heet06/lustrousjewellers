@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'scripts/connection.php';
+include 'connection.php';
 
 if (isset($_POST['selectedProducts'])) {
     $selectedProducts = $_POST['selectedProducts'];
