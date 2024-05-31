@@ -19,6 +19,7 @@ Allow: /diamonds
 Allow: /contact
 Allow: /
 
+
 # Allow crawling of login and registration pages
 Allow: /login
 Allow: /register
