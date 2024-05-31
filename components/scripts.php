@@ -45,28 +45,4 @@
             scrub: true,
         },
     });
-
-    gsap.to('body', {
-        background: `linear-gradient(120deg, #4e7ed6, #cd3df6)`,
-        scrollTrigger: {
-            trigger: '#main',
-            scroller: 'body',
-            markers: false,
-            start: 'top 30%',
-            end: 'top -60%',
-            scrub: true,
-        },
-    });
-
-    gsap.to('body', {
-        background: `linear-gradient(120deg, #3dc5f6, #d64e5b)`,
-        scrollTrigger: {
-            trigger: '#main',
-            scroller: 'body',
-            markers: false,
-            start: 'top -60%',
-            end: 'top -90%',
-            scrub: true,
-        },
-    });
 </script>
