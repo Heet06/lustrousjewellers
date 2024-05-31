@@ -45,7 +45,7 @@ $result = mysqli_query($con, $query);
 
             <div class="indicator">
                 <?php for ($i = 1; $i < $count; $i++) { ?>
-                    <span class="btn <?php echo ($i == 0) ? "active" : ""; ?>"></span>
+                    <span class="btn-indicator <?php echo ($i == 0) ? "active" : ""; ?>"></span>
                 <?php } ?>
             </div>
         </main>

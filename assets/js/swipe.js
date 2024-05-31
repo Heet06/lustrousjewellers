@@ -1,4 +1,4 @@
-const btns = document.querySelectorAll(".btn");
+const btns = document.querySelectorAll(".btn-indicator");
 const slideRow = document.getElementById("slide-row");
 const main = document.querySelector("main");
 let slides = document.querySelectorAll(".slide-col");
