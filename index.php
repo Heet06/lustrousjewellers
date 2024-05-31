@@ -70,7 +70,7 @@ $result1 = mysqli_query($con, "SELECT * FROM `ornaments`");
                         $count = 0;
                         while ($row = mysqli_fetch_array($result1)) {
                             $src = explode(',', $row['images']);
-                            if ($count % 6 == 0) {
+                            if ($count % 3 == 0) {
                                 echo '<div class="carousel-item ' . ($count == 0 ? 'active' : '') . '">';
                                 echo '<div class="row justify-content-center">';
                             }
@@ -81,7 +81,7 @@ $result1 = mysqli_query($con, "SELECT * FROM `ornaments`");
                                 <h5 class="text-center"><?php echo $row['Price']; ?>$</h5>
                             </div>
                             <?php
-                            if (($count + 1) % 6 == 0 || $count == mysqli_num_rows($result1) - 1) {
+                            if (($count + 1) % 3 == 0 || $count == mysqli_num_rows($result1) - 1) {
                                 echo '</div></div>'; // Close row and carousel-item divs
                             }
                             $count++;
