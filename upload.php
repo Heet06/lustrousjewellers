@@ -14,13 +14,6 @@ if (!isset($_SESSION['auth'])) {
     <title>LustrousJewellers</title>
     <?php include 'components/links.php'; ?>
     <link rel="stylesheet" href="assets/styles/main.css">
-    <style>
-        .image-container {
-            display: inline-block;
-            margin: 10px;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>

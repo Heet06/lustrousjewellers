@@ -26,40 +26,27 @@ $exe = mysqli_query($con, $query);
                 <div class="card border-0">
                     <div class="card-body p-0">
                         <div class="row no-gutters">
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <div class="p-5">
                                     <div class="mb-5">
                                         <h3 class="h4 font-weight-bold text-theme">Modify Products in Homescreen</h3>
                                     </div>
                                     <form method="post" id="modifyForm">
-                                        <div class="form-group mb-5">
+                                        <div class="form-group mb-5 product-grid">
                                             <?php while ($row = mysqli_fetch_array($exe)):
                                                 $images = explode(',', $row['images']); ?>
-                                                <div class="card product-card mb-3">
-                                                    <div class="row no-gutters">
-                                                        <div class="col-md-3">
-                                                            <img src="<?php echo $images[0]; ?>"
-                                                                alt="<?php echo $row['name']; ?>" class="card-img">
-                                                        </div>
-                                                        <div class="col-md-9">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">
-                                                                    <?php echo $row['name']; ?>
-                                                                </h5>
-                                                                <p class="card-text">
-                                                                    <?php echo $row['description']; ?>
-                                                                </p>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input"
-                                                                        name="selectedProducts[]" type="checkbox"
-                                                                        value="<?php echo $row['token']; ?>"
-                                                                        id="check_<?php echo $row['token']; ?>">
-                                                                    <label class="form-check-label"
-                                                                        for="check_<?php echo $row['token']; ?>">
-                                                                        Select
-                                                                    </label>
-                                                                </div>
-                                                            </div>
+                                                <div class="card product-card">
+                                                    <img src="<?php echo $images[0]; ?>" alt="<?php echo $row['name']; ?>"
+                                                        class="card-img-top">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><?php echo $row['name']; ?></h5>
+                                                        <p class="card-text"><?php echo $row['description']; ?></p>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" name="selectedProducts[]"
+                                                                type="checkbox" value="<?php echo $row['token']; ?>"
+                                                                id="check_<?php echo $row['token']; ?>">
+                                                            <label class="form-check-label"
+                                                                for="check_<?php echo $row['token']; ?>">Select</label>
                                                         </div>
                                                     </div>
                                                 </div>
