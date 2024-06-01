@@ -61,7 +61,6 @@ $result1 = mysqli_query($con, "SELECT * FROM `ornaments`");
     </div>
 
     <div class="container">
-
         <div class="row">
             <div class="col-md-12">
                 <div id="itemslider" class="carousel slide" data-bs-ride="carousel">
@@ -75,14 +74,14 @@ $result1 = mysqli_query($con, "SELECT * FROM `ornaments`");
                                 echo '<div class="row justify-content-center">';
                             }
                             ?>
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-6"> <!-- Adjusted to col-6 for mobile view -->
                                 <a href="#"><img src="<?php echo $src[0]; ?>" class="img-fluid"></a>
                                 <h4 class="text-center"><?php echo $row['name']; ?></h4>
                                 <h5 class="text-center"><?php echo $row['Price']; ?>$</h5>
                             </div>
                             <?php
                             if (($count + 1) % 4 == 0 || $count == mysqli_num_rows($result1) - 1) {
-                                echo '</div></div>'; // Close row and carousel-item divs
+                                echo '</div></div>';
                             }
                             $count++;
                         }
@@ -100,7 +99,6 @@ $result1 = mysqli_query($con, "SELECT * FROM `ornaments`");
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
             </div>
         </div>
     </div>

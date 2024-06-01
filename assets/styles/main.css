@@ -19,7 +19,9 @@
     box-sizing: border-box;
 }
 
+html,
 body {
+    width: 100%;
     overflow-x: hidden;
     font-family: 'Josefin Sans', 'Roboto', Arial, sans-serif;
     /* Replace with your preferred font stack */
