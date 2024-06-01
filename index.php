@@ -102,7 +102,7 @@ $result1 = mysqli_query($con, "SELECT * FROM `ornaments`");
     </div>
     <?php include 'components/footer.php'; ?>
     <?php include 'components/scripts.php'; ?>
-    <script async src="assets/js/swipe.js"></script>
+    <script src="assets/js/swipe.js"></script>
 </body>
 
 </html>
