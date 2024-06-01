@@ -10,13 +10,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $productType = $_POST["productType"];
 
     // Process uploaded files
-    $uploadDirectory = "uploads/"; // Change this to your actual upload directory
+    $uploadDirectory = "../uploads/"; // Change this to your actual upload directory
 
     $fileNames = [];
     foreach ($_FILES["files"]["tmp_name"] as $key => $tmp_name) {
         $fileName = $_FILES["files"]["name"][$key];
         $targetFilePath = $uploadDirectory . $fileName;
-        move_uploaded_file($tmp_name, "../uploads/");
+        move_uploaded_file($tmp_name, $targetFilePath);
         $fileNames[] = $targetFilePath;
     }
 
