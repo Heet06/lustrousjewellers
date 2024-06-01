@@ -20,8 +20,6 @@ $result1 = mysqli_query($con, "SELECT * FROM `ornaments`");
     <?php include 'components/header.php'; ?>
     <div class="contain">
         <main>
-            <h1>Our Top Sellers</h1>
-
             <div class="slider">
                 <div class="slide-row" id="slide-row">
                     <?php $count = 1;
