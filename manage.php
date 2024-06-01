@@ -37,7 +37,6 @@ if (isset($_GET['dd'])) {
 <head>
   <title>LustrousJewellers</title>
   <?php include 'components/links.php'; ?>
-  <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>

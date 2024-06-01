@@ -12,7 +12,6 @@ $result1 = mysqli_query($con, "SELECT * FROM `ornaments`");
 <head>
     <title>LustrousJewellers</title>
     <?php include 'components/links.php'; ?>
-    <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/swipe.css">
 </head>
 

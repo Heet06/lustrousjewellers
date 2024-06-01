@@ -7,12 +7,11 @@ $exe = mysqli_query($con, $query);
 ?>
 
 <!DOCTYPE html>
-<html lang="en" style="font-family: 'Cookie';">
+<html lang="en">
 
 <head>
     <title>LustrousJewellers</title>
     <?php include 'components/links.php'; ?>
-    <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>

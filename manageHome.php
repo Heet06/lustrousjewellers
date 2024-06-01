@@ -16,7 +16,6 @@ $exe = mysqli_query($con, $query);
 <head>
     <title>LustrousJewellers</title>
     <?php include 'components/links.php'; ?>
-    <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>

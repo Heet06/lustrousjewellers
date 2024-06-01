@@ -14,7 +14,6 @@ if (!isset($_SESSION['auth'])) {
 <head>
     <title>LustrousJewellers</title>
     <?php include 'components/links.php'; ?>
-    <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 
 <body>
