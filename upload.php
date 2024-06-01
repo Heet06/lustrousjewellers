@@ -84,7 +84,7 @@ if (!isset($_SESSION['auth'])) {
 
     <?php include 'components/footer.php'; ?>
     <?php include 'components/scripts.php'; ?>
-    <script>
+    <script async>
         function openModal() {
             var modal = document.getElementById('successModal');
             modal.style.display = 'block';

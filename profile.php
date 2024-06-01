@@ -97,7 +97,7 @@ if (isset($_POST['submit'])) {
     </div>
     <?php include 'components/footer.php'; ?>
     <?php include 'components/scripts.php'; ?>
-    <script>
+    <script async>
         function validateForm() {
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
