@@ -41,6 +41,11 @@ body {
     /* Optional: Adding subtle shadow */
 }
 
+.custom-header .container-fluid {
+    display: flex;
+    justify-content: space-around;
+}
+
 .custom-header .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
