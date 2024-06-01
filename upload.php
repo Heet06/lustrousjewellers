@@ -96,29 +96,52 @@ if (!isset($_SESSION['auth'])) {
         }
 
         function submitForm() {
-            var formData = new FormData($('#productForm')[0]);
+            var formData = new FormData();
+            var formElements = $('#productForm')[0].elements;
 
-            $.ajax({
-                url: 'scripts/upload_backend',
-                type: 'POST',
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function (response) {
-                    console.log(response);
-                    openModal();
-                    clearForm();
-                },
-                error: function (error) {
-                    console.log(error);
+            // Append non-file elements to formData
+            for (var i = 0; i < formElements.length; i++) {
+                var element = formElements[i];
+                if (element.name && element.type !== 'file') {
+                    formData.append(element.name, element.value);
                 }
+            }
+
+            // Convert images to WebP and append to formData
+            var fileInput = document.getElementById('form-files');
+            var files = fileInput.files;
+            var promises = [];
+
+            for (var i = 0; i < files.length; i++) {
+                promises.push(convertToWebP(files[i]));
+            }
+
+            Promise.all(promises).then(function (webpFiles) {
+                webpFiles.forEach(function (webpFile) {
+                    formData.append('files[]', webpFile);
+                });
+
+                $.ajax({
+                    url: 'scripts/upload_backend',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        console.log(response);
+                        openModal();
+                        clearForm();
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
             });
         }
 
         function clearForm() {
             $('#productForm')[0].reset();
             $('#form-files').val('');
-            clearFiles();
             clearImagePreviews();
         }
 
@@ -160,7 +183,6 @@ if (!isset($_SESSION['auth'])) {
                         img.appendChild(imgElement);
 
                         preview.appendChild(img);
-                        scroll.update();
                     }
 
                     reader.readAsDataURL(input.files[i]);
@@ -168,9 +190,42 @@ if (!isset($_SESSION['auth'])) {
             }
         }
 
-
         function previewClose() {
             $('#imagePreviewContainer').addClass('d-none');
+        }
+
+        function convertToWebP(file) {
+            return new Promise(function (resolve, reject) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    var img = new Image();
+                    img.src = e.target.result;
+
+                    img.onload = function () {
+                        var canvas = document.createElement('canvas');
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+                        var ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0);
+
+                        canvas.toBlob(function (blob) {
+                            var webpFile = new File([blob], file.name.split('.').slice(0, -1).join('.') + '.webp', { type: 'image/webp' });
+                            resolve(webpFile);
+                        }, 'image/webp');
+                    };
+
+                    img.onerror = function (error) {
+                        reject(error);
+                    };
+                };
+
+                reader.onerror = function (error) {
+                    reject(error);
+                };
+
+                reader.readAsDataURL(file);
+            });
         }
     </script>
 </body>
