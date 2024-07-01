@@ -42,7 +42,7 @@ function startAutoplay() {
     intervalId = setInterval(() => {
         currentIndex = (currentIndex + 1) % slides.length;
         updateSlide();
-    }, 4000); // Adjust the interval (in milliseconds) as needed
+    }, 5000); // Adjust the interval (in milliseconds) as needed
 }
 
 startAutoplay();
