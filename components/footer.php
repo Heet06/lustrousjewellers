@@ -13,7 +13,7 @@
                 <p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>
             </div>
             <div><i class="fa fa-phone footer-contacts-icon"></i>
-                <p class="footer-center-info email text-start"> +1 555 123456</p>
+                <p class="footer-center-info email text-center"> +1 555 123456</p>
             </div>
             <div><i class="fa fa-envelope footer-contacts-icon"></i>
                 <p><a href="#" target="_blank">support@company.com</a></p>
